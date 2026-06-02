@@ -6,6 +6,8 @@
 - `CODEX_START_HERE.md`
 - `docs/DECISIONS.md`
 - `docs/OPEN_QUESTIONS.md`
+- `docs/PRE_CODE_FINAL_CHECKLIST.md`
+- `docs/codex/TASK_001_FOUNDATION_PROMPT.md`
 
 ## Core planning
 
@@ -33,6 +35,11 @@
 - `docs/product/09_HELP_AND_TOOLTIPS.md`
 - `docs/product/15_MULTILANGUAGE_RU_EN.md`
 - `docs/product/16_SAVED_COLLECTIONS_AND_COMBINED_PDF.md`
+- `docs/product/17_FEATURE_MATRIX.md`
+- `docs/product/18_LIMITS_AND_CONSTRAINTS.md`
+- `docs/product/19_OFFLINE_BEHAVIOR_MATRIX.md`
+- `docs/product/20_MVP_RELEASE_PLAN.md`
+- `docs/product/21_FEEDBACK_AND_BUG_REPORT_FLOW.md`
 
 ## Design
 
@@ -54,6 +61,7 @@
 - `docs/calculators/03_LED_SPEC.md`
 - `docs/calculators/04_ROUNDING_AND_UNITS.md`
 - `docs/calculators/05_ENGINEERING_LIMITS_AND_ASSUMPTIONS.md`
+- `docs/calculators/06_MISSING_DATA_POLICY.md`
 
 ## Catalogs
 
@@ -71,17 +79,24 @@
 - `docs/engineering/07_FEATURE_FLAGS.md`
 - `docs/engineering/08_TEST_FIXTURES_POLICY.md`
 - `docs/engineering/09_STORAGE_MIGRATIONS.md`
+- `docs/engineering/10_CI_CHECKS_PLAN.md`
+- `docs/engineering/11_DEVELOPMENT_WORKFLOW.md`
 
 ## Assets
 
 - `docs/assets/00_ASSET_PRODUCTION_PLAN.md`
 - `docs/assets/01_GENERATION_PROMPTS.md`
+- `docs/assets/02_SOURCE_ASSET_AUDIT.md`
+- `docs/assets/03_PRODUCTION_ASSET_MANIFEST.md`
+- `assets/README.md`
+- `assets/BINARY_UPLOAD_TODO.md`
 
 ## Store
 
 - `docs/store/00_STORE_METADATA_DRAFT.md`
 - `docs/store/01_PRIVACY_POLICY_DRAFT.md`
 - `docs/store/02_SUPPORT_AND_TERMS_DRAFT.md`
+- `docs/store/03_PRIVACY_LABELS_AND_DATA_SAFETY_MAPPING.md`
 
 ## Screens
 
@@ -100,10 +115,22 @@
 
 - `docs/qa/00_DEVICE_TEST_MATRIX.md`
 - `docs/qa/01_REGRESSION_SCENARIOS.md`
+- `docs/qa/02_TEST_STRATEGY.md`
+
+## Risk / Market / Roadmap
+
+- `docs/risk/00_RISK_REGISTER.md`
+- `docs/risk/01_PRE_MORTEM.md`
+- `docs/risk/02_STORE_REVIEW_RISKS.md`
+- `docs/risk/03_CALCULATION_SAFETY_RISKS.md`
+- `docs/risk/04_SCOPE_CREEP_GUARD.md`
+- `docs/market/00_MARKET_VALIDATION_AND_GO_NO_GO.md`
+- `docs/roadmap/00_3D_CONSTRUCTOR_V2.md`
 
 ## Legal / Security / Monetization / Migration
 
 - `docs/legal/00_MANUFACTURER_NAMES_POLICY.md`
 - `docs/security/00_SECURITY_PRIVACY_CHECKLIST.md`
 - `docs/monetization/00_NO_ADS_PRO_STRATEGY.md`
+- `docs/monetization/01_FREE_PRO_MATRIX_DRAFT.md`
 - `docs/migration/00_FEG_TO_PACKIT_MIGRATION_MAP.md`
