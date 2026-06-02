@@ -1,6 +1,6 @@
 # PACK.IT Standalone Calculators
 
-Документационный репозиторий для переписывания standalone-калькуляторов Stage / Truss / LED под новый бренд **ПАК.ИТ / PACK.IT** и будущий выпуск в App Store / Google Play.
+Документационный и ассетный pre-code репозиторий для переписывания standalone-калькуляторов Stage / Truss / LED под новый бренд **ПАК.ИТ / PACK.IT** и будущий выпуск в App Store / Google Play.
 
 Исходная логика переносится из текущего рабочего репозитория:
 
@@ -23,9 +23,22 @@
 - настройки цен;
 - PDF/export/share;
 - offline-first;
-- без аккаунтов, backend, аналитики и сбора персональных данных в v1.0.
+- RU/EN foundation;
+- без рекламы;
+- без аккаунтов, backend, аналитики и трекинга в v1.0.
 
-## Документы
+## Быстрый старт для Codex
+
+Перед кодом читать:
+
+1. [`CODEX_START_HERE.md`](CODEX_START_HERE.md)
+2. [`docs/INDEX.md`](docs/INDEX.md)
+3. [`docs/DECISIONS.md`](docs/DECISIONS.md)
+4. [`docs/OPEN_QUESTIONS.md`](docs/OPEN_QUESTIONS.md)
+5. [`docs/PRE_CODE_FINAL_CHECKLIST.md`](docs/PRE_CODE_FINAL_CHECKLIST.md)
+6. [`docs/codex/TASK_001_FOUNDATION_PROMPT.md`](docs/codex/TASK_001_FOUNDATION_PROMPT.md)
+
+## Основные документы
 
 - [`docs/00_MASTER_PLAN.md`](docs/00_MASTER_PLAN.md) — общий план rewrite и релизная стратегия.
 - [`docs/01_SOURCE_AUDIT.md`](docs/01_SOURCE_AUDIT.md) — что переносим из `Feg_Calc_Stage`, что не переносим.
@@ -36,6 +49,21 @@
 - [`docs/06_CODEX_TASKS.md`](docs/06_CODEX_TASKS.md) — порядок задач для Codex.
 - [`docs/07_BRAND_CONTRACT.md`](docs/07_BRAND_CONTRACT.md) — переход с FEG на ПАК.ИТ / PACK.IT.
 - [`docs/08_DEFINITION_OF_DONE.md`](docs/08_DEFINITION_OF_DONE.md) — критерии готовности задач и baseline.
+
+Полный индекс: [`docs/INDEX.md`](docs/INDEX.md)
+
+## Ассеты
+
+Ассетная структура уже создана в [`assets/`](assets/).
+
+Ключевые файлы:
+
+- [`docs/assets/03_PRODUCTION_ASSET_MANIFEST.md`](docs/assets/03_PRODUCTION_ASSET_MANIFEST.md) — production asset manifest.
+- [`assets/README.md`](assets/README.md) — структура ассетов.
+- [`assets/BINARY_UPLOAD_TODO.md`](assets/BINARY_UPLOAD_TODO.md) — что позже загрузить из raster ZIP.
+- [`assets/design-tokens/packit-asset-colors.css`](assets/design-tokens/packit-asset-colors.css) — спокойная PACK.IT palette.
+
+Raster PNG/WebP ассеты подготовлены в архиве `packit_production_assets_v0_1.zip`, но загрузку бинарников можно отложить до desktop workflow.
 
 ## Базовый принцип разработки
 
@@ -49,7 +77,9 @@
 - Capacitor-ready;
 - с чистым `core/` без DOM и UI-зависимостей;
 - с отдельными renderer/pdf/storage/native слоями;
-- без FEG-бренда в пользовательском интерфейсе.
+- с RU/EN i18n foundation;
+- без FEG-бренда в пользовательском интерфейсе;
+- без рекламы, трекинга и аналитики в v1.0.
 
 Правильная цепочка:
 
@@ -62,3 +92,19 @@ source audit → core contracts → core tests → stage core → truss core →
 ```text
 скопировать старый index.html → завернуть в Capacitor → чинить overflow/CSS/runtime баги бесконечно
 ```
+
+## Первый разрешённый кодовый шаг
+
+Только после явной команды:
+
+```text
+готово, начинаем Task 001
+```
+
+Первый шаг:
+
+```text
+Task 001 — Foundation
+```
+
+Он создаёт только чистую основу приложения: React + TypeScript + Vite + Capacitor, маршруты, PACK.IT brand layer, i18n, design tokens, пустые экраны и placeholder core contracts. Без расчётов, PDF, storage, backend, ads, analytics и старого FEG-кода.
