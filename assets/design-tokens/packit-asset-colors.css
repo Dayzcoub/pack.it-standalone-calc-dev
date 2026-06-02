@@ -1,0 +1,27 @@
+:root {
+  /* PACK.IT calm dusty technical palette */
+  --packit-bg-900: #071014;
+  --packit-bg-850: #0A1419;
+  --packit-bg-800: #0F1A20;
+  --packit-panel-700: #142027;
+  --packit-panel-650: #1B2A31;
+
+  --packit-text-100: #F2F4F1;
+  --packit-text-200: #D8DEDA;
+  --packit-muted-400: #91A09E;
+  --packit-muted-500: #6E7E7B;
+
+  --packit-dust-blue-500: #5A747A;
+  --packit-dust-blue-400: #789094;
+  --packit-dust-slate-500: #4A6070;
+  --packit-dust-green-500: #6D7E76;
+  --packit-warm-sand-500: #C6A46E;
+
+  --packit-success: #5F816F;
+  --packit-warning: #C6A46E;
+  --packit-danger: #A96666;
+  --packit-info: #4A6070;
+
+  --packit-line-soft: rgba(216, 222, 218, 0.12);
+  --packit-line-strong: rgba(216, 222, 218, 0.24);
+}
