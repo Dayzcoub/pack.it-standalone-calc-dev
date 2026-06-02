@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 128" role="img" aria-labelledby="title desc">
+  <title id="title">PACK.IT horizontal logo</title>
+  <desc id="desc">Placeholder horizontal logo for PACK.IT Calculators.</desc>
+  <defs>
+    <linearGradient id="mark" x1="16" y1="16" x2="112" y2="112" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D8DEDA"/>
+      <stop offset="0.55" stop-color="#789094"/>
+      <stop offset="1" stop-color="#4A6070"/>
+    </linearGradient>
+    <linearGradient id="word" x1="140" y1="40" x2="470" y2="90" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2F4F1"/>
+      <stop offset="0.72" stop-color="#D8DEDA"/>
+      <stop offset="1" stop-color="#789094"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <path d="M64 10 112 38v52l-48 28-48-28V38L64 10Z" fill="none" stroke="url(#mark)" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M24 41 64 64l40-23" fill="none" stroke="#D8DEDA" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M64 64v45" fill="none" stroke="#789094" stroke-width="7" stroke-linecap="round"/>
+    <path d="M43 34 64 46l21-12" fill="none" stroke="#6D7E76" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="142" y="73" font-family="Inter, Arial, sans-serif" font-size="50" font-weight="800" letter-spacing="1" fill="url(#word)">PACK.IT</text>
+  <text x="145" y="102" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600" letter-spacing="8" fill="#91A09E">CALCULATORS</text>
+</svg>
