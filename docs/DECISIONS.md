@@ -16,6 +16,16 @@ Decision: React + TypeScript + Vite + Capacitor direction, with pure `core/` sep
 
 Decision: v1.0 is offline-first, no account, no backend, no analytics, no tracking.
 
+## 2026-06-02 — Standalone app line / no backend
+
+Decision: this app line remains a standalone/offline calculator for fast Stage/Truss/LED constructions.
+
+No backend, cloud admin panel, accounts, workspace administration, remote config, server-side catalog management or analytics should be added to this repository/product line.
+
+Administration is local or release-based: local price/settings/saved calculations for the user, and versioned app/catalog/engine/PDF updates through releases.
+
+If cloud/workspace/backend is ever considered, it must be a separate product decision and likely a separate product line.
+
 ## 2026-06-02 — Ads
 
 Decision: no ads in v1.0; no ad SDK; future monetization through Pro/entitlements.
