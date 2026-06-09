@@ -6,6 +6,7 @@
 - `CODEX_START_HERE.md`
 - `docs/DECISIONS.md`
 - `docs/OPEN_QUESTIONS.md`
+- `docs/KNOWN_ISSUES.md`
 - `docs/PRE_CODE_FINAL_CHECKLIST.md`
 - `docs/codex/TASK_001_FOUNDATION_PROMPT.md`
 
@@ -40,6 +41,9 @@
 - `docs/product/19_OFFLINE_BEHAVIOR_MATRIX.md`
 - `docs/product/20_MVP_RELEASE_PLAN.md`
 - `docs/product/21_FEEDBACK_AND_BUG_REPORT_FLOW.md`
+- `docs/product/22_DEMO_EXAMPLES_AND_ONBOARDING.md`
+- `docs/product/23_DEFAULT_PRICING_AND_PRICE_ONBOARDING.md`
+- `docs/product/24_FIELD_USE_REQUIREMENTS.md`
 
 ## Design
 
@@ -52,6 +56,11 @@
 - `docs/design/06_PDF_STYLE_GUIDE.md`
 - `docs/design/07_STORE_SCREENSHOT_PLAN.md`
 - `docs/design/08_APPROVED_MOCKUPS_AND_NEXT_BATCH.md`
+
+## Brand / i18n
+
+- `docs/brand/00_BRAND_VOICE.md`
+- `docs/i18n/00_TERMINOLOGY_GLOSSARY.md`
 
 ## Calculators
 
@@ -68,6 +77,7 @@
 - `docs/catalogs/00_CATALOG_VERSIONING.md`
 - `docs/catalogs/04_EXTENSIBLE_TRUSS_SYSTEMS.md`
 - `docs/catalogs/05_CUSTOM_LED_MODULES_AND_CABINETS.md`
+- `docs/catalogs/09_DEFAULT_CATALOG_DISCLOSURE.md`
 
 ## Engineering
 
@@ -110,12 +120,15 @@
 - `docs/release/00_RELEASE_CHANNELS.md`
 - `docs/release/01_VERSIONING_POLICY.md`
 - `docs/release/02_BUILD_FLAVORS.md`
+- `docs/release/03_CHANGELOG_POLICY.md`
+- `docs/release/04_BETA_RELEASE_CHECKLIST.md`
 
 ## QA
 
 - `docs/qa/00_DEVICE_TEST_MATRIX.md`
 - `docs/qa/01_REGRESSION_SCENARIOS.md`
 - `docs/qa/02_TEST_STRATEGY.md`
+- `docs/qa/03_REAL_WORLD_TEST_CASES.md`
 
 ## Risk / Market / Roadmap
 
