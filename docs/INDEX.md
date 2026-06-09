@@ -9,6 +9,7 @@
 - `docs/KNOWN_ISSUES.md`
 - `docs/PRE_CODE_FINAL_CHECKLIST.md`
 - `docs/codex/TASK_001_FOUNDATION_PROMPT.md`
+- `docs/codex/TASK_001_FINAL_HANDOFF.md`
 
 ## Core planning
 
@@ -62,6 +63,7 @@
 - `docs/design/06_PDF_STYLE_GUIDE.md`
 - `docs/design/07_STORE_SCREENSHOT_PLAN.md`
 - `docs/design/08_APPROVED_MOCKUPS_AND_NEXT_BATCH.md`
+- `docs/design/09_MOBILE_REFERENCE_SCREENS.md`
 
 ## Brand / i18n
 
