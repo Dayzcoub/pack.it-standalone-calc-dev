@@ -111,6 +111,7 @@
 - `docs/assets/01_GENERATION_PROMPTS.md`
 - `docs/assets/02_SOURCE_ASSET_AUDIT.md`
 - `docs/assets/03_PRODUCTION_ASSET_MANIFEST.md`
+- `docs/assets/04_ASSET_GENERATION_PLAN.md`
 - `assets/README.md`
 - `assets/BINARY_UPLOAD_TODO.md`
 
