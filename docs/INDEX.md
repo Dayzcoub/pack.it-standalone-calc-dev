@@ -45,6 +45,10 @@
 - `docs/product/23_DEFAULT_PRICING_AND_PRICE_ONBOARDING.md`
 - `docs/product/24_FIELD_USE_REQUIREMENTS.md`
 
+## Admin / standalone scope
+
+- `docs/admin/00_STANDALONE_ADMINISTRATION_MODEL.md`
+
 ## Design
 
 - `docs/design/00_VISUAL_DIRECTION.md`
