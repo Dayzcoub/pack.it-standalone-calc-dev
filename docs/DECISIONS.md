@@ -26,6 +26,20 @@ Administration is local or release-based: local price/settings/saved calculation
 
 If cloud/workspace/backend is ever considered, it must be a separate product decision and likely a separate product line.
 
+## 2026-06-02 — System backup, not product cloud
+
+Decision: important local app data should be stored in backup-friendly app storage where platform rules allow, so iCloud Backup / Android or Google Backup may restore it if enabled by the user.
+
+PACK.IT still has no own backend and does not guarantee cloud sync. Help/privacy wording must say system backup may restore data, but PACK.IT does not provide direct cross-device synchronization.
+
+Temporary files, PDF cache, render screenshots and debug logs should not be included in backup where possible.
+
+## 2026-06-02 — Local import/export future
+
+Decision: future backup/restore may be implemented as local user-controlled JSON import/export with schema/version metadata.
+
+No server import/export and no automatic upload.
+
 ## 2026-06-02 — Ads
 
 Decision: no ads in v1.0; no ad SDK; future monetization through Pro/entitlements.
