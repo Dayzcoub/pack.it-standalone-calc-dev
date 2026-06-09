@@ -2,7 +2,7 @@
 
 ## 1. Purpose
 
-This matrix is the single quick reference for what belongs to v1.0, what is later, and what belongs to future Pro.
+This matrix is the single quick reference for what belongs to v1.0, what is later, and what is out of this standalone app line.
 
 ## 2. Matrix
 
@@ -19,20 +19,25 @@ This matrix is the single quick reference for what belongs to v1.0, what is late
 | EN language foundation | Yes | Improve | Yes | Full text coverage required |
 | Dark theme | Yes | Yes | Yes | Default |
 | Light theme | Yes or flag | Yes | Yes | Calm light theme |
-| Combined PDF | Optional/flag | Yes | Likely Pro candidate | Depends release scope |
+| Combined PDF | Optional/flag | Yes | Likely Pro candidate | Local only, from saved snapshots |
 | Technical PDF mode | Optional/flag | Yes | Likely Pro candidate | Client/technical split |
-| Custom truss catalogs | Data model only | Maybe editor | Pro candidate | Built-in catalogs read-only |
-| Custom LED modules/cabinets | Data model only | Maybe editor | Pro candidate | For self-built cabinets |
-| JSON backup/export | Not required | Yes | Maybe Pro | Architecture-ready |
-| CSV BOM export | Not required | Maybe | Pro candidate | PDF BOM in v1.0 |
+| Local price profiles | Yes | Improve | Yes | User-administered locally |
+| Custom truss catalogs | Data model only | Maybe local editor | Pro candidate | Built-in catalogs read-only |
+| Custom LED modules/cabinets | Data model only | Maybe local editor | Pro candidate | Local/offline only |
+| JSON backup/export | Not required | Yes | Maybe Pro | Local file import/export |
+| CSV BOM export | Not required | Maybe | Pro candidate | Local export |
 | Project packages | Data model/future | Maybe | Pro candidate | Local package, not CRM |
-| Cloud sync | No | No | Future only | Requires privacy/backend decision |
-| Accounts | No | No | Future only | Not v1.0 |
+| Cloud sync | No | No | No | Out of standalone app line |
+| Backend | No | No | No | Out of standalone app line |
+| Remote config | No | No | No | No hidden server control |
+| Server admin panel | No | No | No | Out of standalone app line |
+| Accounts | No | No | No | Out of standalone app line |
+| Workspace admin/roles | No | No | No | Out of standalone app line |
 | Ads | No | No | No | Decision: no ads |
-| Analytics/tracking | No | No | No by default | Any change requires privacy update |
-| Store purchases/IAP | No | Maybe | Yes | Future Pro phase |
-| CRM/warehouse/team | No | No | Separate product/future | Out of v1.0 scope |
-| Full 3D constructor | No | Future R&D | Future | Not first release |
+| Analytics/tracking | No | No | No | No tracking in standalone app line |
+| Store purchases/IAP | No | Maybe | Yes | Only if local entitlement/unlock approach is acceptable |
+| CRM/warehouse/team | No | No | Separate product only | Out of standalone calculator scope |
+| Full 3D constructor | No | Future R&D | Future | v2 roadmap, still local-first |
 
 ## 3. v1.0 principle
 
@@ -40,8 +45,14 @@ This matrix is the single quick reference for what belongs to v1.0, what is late
 calculate → save → PDF → share
 ```
 
-Anything outside this line must be either feature-flagged, documented as future, or excluded.
+Anything outside this line must be either explicitly local/offline, documented as future, or excluded.
 
-## 4. Acceptance
+## 4. Standalone line principle
+
+This product line is a standalone calculator.
+
+Do not add backend/cloud/admin/workspace features to this app line.
+
+## 5. Acceptance
 
 Task scope is accepted only if it matches this matrix or updates this matrix through an explicit product decision.
