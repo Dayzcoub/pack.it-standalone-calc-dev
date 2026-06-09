@@ -44,6 +44,8 @@
 - `docs/product/22_DEMO_EXAMPLES_AND_ONBOARDING.md`
 - `docs/product/23_DEFAULT_PRICING_AND_PRICE_ONBOARDING.md`
 - `docs/product/24_FIELD_USE_REQUIREMENTS.md`
+- `docs/product/25_EDGE_CASES_AND_EXTREME_INPUTS.md`
+- `docs/product/26_SAVED_CALCULATION_NAMING.md`
 
 ## Admin / standalone scope
 
@@ -75,6 +77,7 @@
 - `docs/calculators/04_ROUNDING_AND_UNITS.md`
 - `docs/calculators/05_ENGINEERING_LIMITS_AND_ASSUMPTIONS.md`
 - `docs/calculators/06_MISSING_DATA_POLICY.md`
+- `docs/calculators/07_CALCULATION_CHANGE_AND_SAFETY_POLICY.md`
 
 ## Catalogs
 
@@ -95,6 +98,12 @@
 - `docs/engineering/09_STORAGE_MIGRATIONS.md`
 - `docs/engineering/10_CI_CHECKS_PLAN.md`
 - `docs/engineering/11_DEVELOPMENT_WORKFLOW.md`
+
+## Storage / PDF
+
+- `docs/storage/00_LOCAL_DATA_AND_BACKUP_POLICY.md`
+- `docs/storage/01_LOCAL_IMPORT_EXPORT_POLICY.md`
+- `docs/pdf/00_PDF_LEGAL_AND_METADATA_POLICY.md`
 
 ## Assets
 
