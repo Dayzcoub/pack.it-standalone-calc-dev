@@ -1,167 +1,70 @@
 # Documentation Index
 
+## PACK.IT Alpha 0.1.0
+
+Status:
+
+```text
+Architecture Freeze #1
+Project Scene First
+```
+
+PACK.IT is documented as a single standalone/offline mobile-first 3D constructor for technical event packages.
+
 ## Start here
 
-- `README.md`
-- `CODEX_START_HERE.md`
-- `docs/PACKIT_MASTER_SPEC.md`
-- `docs/DECISIONS.md`
-- `docs/DOCUMENTATION_RULES.md`
-- `docs/OPEN_QUESTIONS.md`
-- `docs/KNOWN_ISSUES.md`
-- `docs/PRE_CODE_FINAL_CHECKLIST.md`
-- `docs/codex/TASK_001_FOUNDATION_PROMPT.md`
-- `docs/codex/TASK_001_FINAL_HANDOFF.md`
-
-## Core planning
-
-- `docs/00_MASTER_PLAN.md`
-- `docs/01_SOURCE_AUDIT.md`
-- `docs/02_ARCHITECTURE_CONTRACT.md`
-- `docs/03_CORE_LOGIC_EXTRACTION.md`
-- `docs/04_MOBILE_UI_CONTRACT.md`
-- `docs/05_STORE_RELEASE_CHECKLIST.md`
-- `docs/06_CODEX_TASKS.md`
-- `docs/07_BRAND_CONTRACT.md`
-- `docs/08_DEFINITION_OF_DONE.md`
+1. `README.md`
+2. `CODEX_START_HERE.md`
+3. `docs/PACKIT_MASTER_SPEC.md`
+4. `docs/DECISIONS.md`
+5. `docs/02_architecture/PROJECT_MODEL.md`
+6. `docs/02_architecture/SCENE_MODEL.md`
+7. `docs/02_architecture/OBJECT_SYSTEM.md`
+8. `docs/02_architecture/ASSET_LIBRARY.md`
+9. `docs/08_tasks/TASK_001_SCENE_SHELL.md`
 
 ## Product
 
-- `docs/product/00_PRODUCT_SCOPE_V1.md`
-- `docs/product/01_DATA_MODEL_RULES.md`
-- `docs/product/02_VALIDATION_AND_WARNINGS.md`
-- `docs/product/03_PDF_AND_EXPORT_MODES.md`
-- `docs/product/04_LEGAL_AND_SAFETY_NOTES.md`
-- `docs/product/05_APP_BEHAVIOR_SPEC.md`
-- `docs/product/06_SETTINGS_AND_PRICE_PROFILES.md`
-- `docs/product/07_SCREEN_STATE_MATRIX.md`
-- `docs/product/08_ERROR_AND_COPY_DICTIONARY.md`
-- `docs/product/09_HELP_AND_TOOLTIPS.md`
-- `docs/product/15_MULTILANGUAGE_RU_EN.md`
-- `docs/product/16_SAVED_COLLECTIONS_AND_COMBINED_PDF.md`
-- `docs/product/17_FEATURE_MATRIX.md`
-- `docs/product/18_LIMITS_AND_CONSTRAINTS.md`
-- `docs/product/19_OFFLINE_BEHAVIOR_MATRIX.md`
-- `docs/product/20_MVP_RELEASE_PLAN.md`
-- `docs/product/21_FEEDBACK_AND_BUG_REPORT_FLOW.md`
-- `docs/product/22_DEMO_EXAMPLES_AND_ONBOARDING.md`
-- `docs/product/23_DEFAULT_PRICING_AND_PRICE_ONBOARDING.md`
-- `docs/product/24_FIELD_USE_REQUIREMENTS.md`
-- `docs/product/25_EDGE_CASES_AND_EXTREME_INPUTS.md`
-- `docs/product/26_SAVED_CALCULATION_NAMING.md`
+- `docs/01_product/PACKIT_VISION.md`
+- `docs/01_product/PACKIT_RELEASE_STRATEGY.md`
+- `docs/01_product/PACKIT_ROADMAP.md`
 
-## Admin / standalone scope
+## Architecture
 
-- `docs/admin/00_STANDALONE_ADMINISTRATION_MODEL.md`
+- `docs/02_architecture/PROJECT_MODEL.md`
+- `docs/02_architecture/SCENE_MODEL.md`
+- `docs/02_architecture/OBJECT_SYSTEM.md`
+- `docs/02_architecture/ASSET_LIBRARY.md`
+- `docs/02_architecture/OFFLINE_FIRST.md`
 
-## Design
+## Rendering
 
-- `docs/design/00_VISUAL_DIRECTION.md`
-- `docs/design/01_UI_KIT_RULES.md`
-- `docs/design/02_LAYOUT_RULES.md`
-- `docs/design/03_CALCULATOR_SCREEN_RULES.md`
-- `docs/design/04_ASSET_REQUIREMENTS.md`
-- `docs/design/05_ICON_STYLE_GUIDE.md`
-- `docs/design/06_PDF_STYLE_GUIDE.md`
-- `docs/design/07_STORE_SCREENSHOT_PLAN.md`
-- `docs/design/08_APPROVED_MOCKUPS_AND_NEXT_BATCH.md`
-- `docs/design/09_MOBILE_REFERENCE_SCREENS.md`
+- `docs/03_rendering/THREEJS_RENDERER.md`
 
-## Brand / i18n
+## Guided builders
 
-- `docs/brand/00_BRAND_VOICE.md`
-- `docs/i18n/00_TERMINOLOGY_GLOSSARY.md`
+- `docs/04_builders/BUILDER_STAGE.md`
+- `docs/04_builders/BUILDER_TRUSS.md`
+- `docs/04_builders/BUILDER_LED.md`
 
-## Calculators
+## BOM / pricing
 
-- `docs/calculators/00_SHARED_CALCULATION_CONTRACT.md`
-- `docs/calculators/01_STAGE_SPEC.md`
-- `docs/calculators/02_TRUSS_SPEC.md`
-- `docs/calculators/03_LED_SPEC.md`
-- `docs/calculators/04_ROUNDING_AND_UNITS.md`
-- `docs/calculators/05_ENGINEERING_LIMITS_AND_ASSUMPTIONS.md`
-- `docs/calculators/06_MISSING_DATA_POLICY.md`
-- `docs/calculators/07_CALCULATION_CHANGE_AND_SAFETY_POLICY.md`
-
-## Catalogs
-
-- `docs/catalogs/00_CATALOG_VERSIONING.md`
-- `docs/catalogs/04_EXTENSIBLE_TRUSS_SYSTEMS.md`
-- `docs/catalogs/05_CUSTOM_LED_MODULES_AND_CABINETS.md`
-- `docs/catalogs/09_DEFAULT_CATALOG_DISCLOSURE.md`
-
-## Engineering
-
-- `docs/engineering/00_IMPLEMENTATION_GUARDRAILS.md`
-- `docs/engineering/01_PERFORMANCE_AND_RENDERING.md`
-- `docs/engineering/02_ACCESSIBILITY_AND_LOCALIZATION.md`
-- `docs/engineering/03_DEPENDENCIES_AND_LICENSES.md`
-- `docs/engineering/04_PRE_CODE_GATE.md`
-- `docs/engineering/07_FEATURE_FLAGS.md`
-- `docs/engineering/08_TEST_FIXTURES_POLICY.md`
-- `docs/engineering/09_STORAGE_MIGRATIONS.md`
-- `docs/engineering/10_CI_CHECKS_PLAN.md`
-- `docs/engineering/11_DEVELOPMENT_WORKFLOW.md`
-
-## Storage / PDF
-
-- `docs/storage/00_LOCAL_DATA_AND_BACKUP_POLICY.md`
-- `docs/storage/01_LOCAL_IMPORT_EXPORT_POLICY.md`
-- `docs/pdf/00_PDF_LEGAL_AND_METADATA_POLICY.md`
+- `docs/05_bom/BOM_ENGINE.md`
+- `docs/05_bom/PRICING_ENGINE.md`
 
 ## Assets
 
-- `docs/assets/00_ASSET_PRODUCTION_PLAN.md`
-- `docs/assets/01_GENERATION_PROMPTS.md`
-- `docs/assets/02_SOURCE_ASSET_AUDIT.md`
-- `docs/assets/03_PRODUCTION_ASSET_MANIFEST.md`
-- `docs/assets/04_ASSET_GENERATION_PLAN.md`
-- `assets/README.md`
-- `assets/BINARY_UPLOAD_TODO.md`
+- `docs/06_assets/GLB_PIPELINE.md`
+- `docs/06_assets/MODEL_IMPORT.md`
 
-## Store
+## Documents / export
 
-- `docs/store/00_STORE_METADATA_DRAFT.md`
-- `docs/store/01_PRIVACY_POLICY_DRAFT.md`
-- `docs/store/02_SUPPORT_AND_TERMS_DRAFT.md`
-- `docs/store/03_PRIVACY_LABELS_AND_DATA_SAFETY_MAPPING.md`
+- `docs/07_documents/PDF_ENGINE.md`
 
-## Screens
+## Tasks
 
-- `docs/screens/00_HOME_SCREEN_SPEC.md`
-- `docs/screens/01_SAVED_SCREEN_SPEC.md`
-- `docs/screens/02_SETTINGS_SCREEN_SPEC.md`
-- `docs/screens/03_PDF_PREVIEW_SCREEN_SPEC.md`
+- `docs/08_tasks/TASK_001_SCENE_SHELL.md`
 
-## Release
+## Archive
 
-- `docs/release/00_RELEASE_CHANNELS.md`
-- `docs/release/01_VERSIONING_POLICY.md`
-- `docs/release/02_BUILD_FLAVORS.md`
-- `docs/release/03_CHANGELOG_POLICY.md`
-- `docs/release/04_BETA_RELEASE_CHECKLIST.md`
-
-## QA
-
-- `docs/qa/00_DEVICE_TEST_MATRIX.md`
-- `docs/qa/01_REGRESSION_SCENARIOS.md`
-- `docs/qa/02_TEST_STRATEGY.md`
-- `docs/qa/03_REAL_WORLD_TEST_CASES.md`
-
-## Risk / Market / Roadmap
-
-- `docs/risk/00_RISK_REGISTER.md`
-- `docs/risk/01_PRE_MORTEM.md`
-- `docs/risk/02_STORE_REVIEW_RISKS.md`
-- `docs/risk/03_CALCULATION_SAFETY_RISKS.md`
-- `docs/risk/04_SCOPE_CREEP_GUARD.md`
-- `docs/market/00_MARKET_VALIDATION_AND_GO_NO_GO.md`
-- `docs/roadmap/00_3D_CONSTRUCTOR_V2.md`
-
-## Legal / Security / Monetization / Migration
-
-- `docs/legal/00_MANUFACTURER_NAMES_POLICY.md`
-- `docs/security/00_SECURITY_PRIVACY_CHECKLIST.md`
-- `docs/monetization/00_NO_ADS_PRO_STRATEGY.md`
-- `docs/monetization/01_FREE_PRO_MATRIX_DRAFT.md`
-- `docs/migration/00_FEG_TO_PACKIT_MIGRATION_MAP.md`
+- `docs/09_archive/README.md`
