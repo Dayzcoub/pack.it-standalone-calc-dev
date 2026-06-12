@@ -1,73 +1,70 @@
 # Decision Log
 
-## 2026-06-02 — New product direction
+## 2026-06-12 — Product versioning
 
-Decision: rewrite standalone calculators as **ПАК.ИТ Калькуляторы / PACK.IT Calculators**.
+Decision: PACK.IT is not released yet.
 
-## 2026-06-02 — Source strategy
+Use pre-release semantic versioning:
 
-Decision: use `Dayzcoub/Feg_Calc_Stage` as logic/reference source, not as codebase foundation.
+```text
+0.x — Alpha/Beta
+1.0.0 — first public release
+```
 
-## 2026-06-02 — Architecture
+Old archive numbers such as `v3.1.88` and `v3.17.50` are historical checkpoints only.
 
-Decision: React + TypeScript + Vite + Capacitor direction, with pure `core/` separated from UI/PDF/storage/native layers.
+## 2026-06-12 — Architecture reset
 
-## 2026-06-02 — v1.0 privacy
+Decision: PACK.IT moves from Calculator First to Project Scene First.
 
-Decision: v1.0 is offline-first, no account, no backend, no analytics, no tracking.
+The product is no longer a set of three standalone calculators for Stage / Truss / LED.
 
-## 2026-06-02 — Standalone app line / no backend
+PACK.IT is a single standalone/offline mobile-first 3D constructor for technical event packages.
 
-Decision: this app line remains a standalone/offline calculator for fast Stage/Truss/LED constructions.
+## 2026-06-12 — Source of truth
 
-No backend, cloud admin panel, accounts, workspace administration, remote config, server-side catalog management or analytics should be added to this repository/product line.
+Decision: `ProjectModel` and `SceneModel` are the source of truth.
 
-Administration is local or release-based: local price/settings/saved calculations for the user, and versioned app/catalog/engine/PDF updates through releases.
+BOM, weight, price, power, PDF, export and visualization must be generated from the shared project scene.
 
-If cloud/workspace/backend is ever considered, it must be a separate product decision and likely a separate product line.
+Separate calculator forms may exist only as guided builders that create or update scene objects.
 
-## 2026-06-02 — System backup, not product cloud
+## 2026-06-12 — Guided builders
 
-Decision: important local app data should be stored in backup-friendly app storage where platform rules allow, so iCloud Backup / Android or Google Backup may restore it if enabled by the user.
+Decision: old quick calculators become guided builders:
 
-PACK.IT still has no own backend and does not guarantee cloud sync. Help/privacy wording must say system backup may restore data, but PACK.IT does not provide direct cross-device synchronization.
+- `Add Stage` creates `StageGroup`;
+- `Add Truss` creates `TrussGroup`;
+- `Add LED` creates `LedGroup`.
 
-Temporary files, PDF cache, render screenshots and debug logs should not be included in backup where possible.
+After creation, objects are edited in the common scene through Object Inspector and transform controls.
 
-## 2026-06-02 — Local import/export future
+## 2026-06-12 — Asset Library and 3D import
 
-Decision: future backup/restore may be implemented as local user-controlled JSON import/export with schema/version metadata.
+Decision: PACK.IT must include Asset Library and manual 3D object placement.
 
-No server import/export and no automatic upload.
+Primary supported asset format:
 
-## 2026-06-02 — Ads
+```text
+GLB / GLTF
+```
 
-Decision: no ads in v1.0; no ad SDK; future monetization through Pro/entitlements.
+Imported objects can be `visualOnly` or `catalogLinked`.
 
-## 2026-06-02 — Languages
+## 2026-06-12 — Task 001 reset
 
-Decision: RU/EN multilingual foundation required.
+Decision: old Task 001 for PACK.IT Calculators is replaced.
 
-## 2026-06-02 — Saved calculations
+New first task:
 
-Decision: saved calculations are separated by Stage/Truss/LED and also available in a combined Saved screen.
+```text
+Task 001 — Project Scene Shell MVP
+```
 
-## 2026-06-02 — Combined PDF
+It creates the app foundation, ProjectModel, SceneModel, SceneObject contracts, renderer shell, Asset Library contracts and empty guided builder entry points.
 
-Decision: architecture must support selecting multiple saved calculations and merging them into one combined PDF.
+## 2026-06-02 — Source strategy retained
 
-## 2026-06-02 — Truss catalogs
+Decision: use `Dayzcoub/Feg_Calc_Stage` as domain logic/reference source, not as codebase foundation.
 
-Decision: truss systems must be extensible for future manufacturer/catalog sets.
-
-## 2026-06-02 — LED catalogs
-
-Decision: LED must support future custom modules and self-built cabinets.
-
-## 2026-06-02 — Snapshots
-
-Decision: saved calculations store input and resultSnapshot. Old snapshots are not recalculated silently.
-
-## 2026-06-02 — Safety
-
-Decision: calculations are reference-only and require disclaimer in app/PDF/store materials.
+Useful Stage/Truss/LED rules should be ported into scene builders and object contribution engines.
