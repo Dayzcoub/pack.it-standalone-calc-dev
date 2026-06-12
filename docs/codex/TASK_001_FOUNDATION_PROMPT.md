@@ -1,115 +1,81 @@
-# TASK 001 — Foundation Prompt
+# TASK 001 — Project Scene Shell MVP Prompt
 
 Copy this prompt to Codex when starting the first code task.
 
 ---
 
-Create the clean foundation for PACK.IT Calculators mobile app.
+Create the clean foundation for **PACK.IT Alpha 0.1.0**.
 
 ## Product
 
 Build a new app foundation for:
 
 ```text
-PACK.IT Calculators / ПАК.ИТ Калькуляторы
+PACK.IT / ПАК.ИТ
 ```
 
-The app will later contain Stage, Truss and LED calculators.
+The app is a standalone/offline mobile-first 3D constructor for technical event packages.
+
+It must not be built as three separate calculators.
+
+## Architecture
+
+Use Project Scene First:
+
+```text
+ProjectModel → SceneModel → SceneObjects / Groups
+```
+
+BOM, weight, price, power, PDF and export will later be generated from the shared scene.
 
 ## Stack
 
 Use:
 
-```text
-React + TypeScript + Vite + Capacitor
-```
+- React;
+- TypeScript;
+- Vite;
+- Capacitor-ready structure;
+- Three.js-ready renderer layer.
 
-## Read before coding
-
-Read:
-
-- `CODEX_START_HERE.md`
-- `docs/INDEX.md`
-- `docs/DECISIONS.md`
-- `docs/engineering/04_PRE_CODE_GATE.md`
-- `docs/02_ARCHITECTURE_CONTRACT.md`
-- `docs/product/17_FEATURE_MATRIX.md`
-- `docs/design/00_VISUAL_DIRECTION.md`
-- `docs/engineering/00_IMPLEMENTATION_GUARDRAILS.md`
-
-## Required output
+## Implement in Task 001
 
 Create:
 
-- project package setup;
-- Vite React TypeScript app;
-- Capacitor config;
-- routes/screens:
-  - Home;
-  - Stage;
-  - Truss;
-  - LED;
-  - Saved;
-  - Settings;
-  - Help;
-  - About;
+- app shell;
+- routing foundation;
 - PACK.IT brand layer;
+- design tokens;
 - RU/EN i18n foundation;
-- design token CSS foundation;
-- shared UI placeholders;
-- empty core contract folders/files only;
-- basic test/check/build scripts.
+- typed `ProjectModel` contracts;
+- typed `SceneModel` contracts;
+- typed `SceneObject` / `SceneGroup` contracts;
+- placeholder Three.js scene shell;
+- placeholder Asset Library module;
+- placeholder guided builder entry points:
+  - Add Stage;
+  - Add Truss;
+  - Add LED;
+- offline storage adapter interface;
+- simple smoke tests/type checks.
 
 ## Do not implement yet
 
 Do not implement:
 
-- Stage calculation logic;
-- Truss calculation logic;
-- LED calculation logic;
-- PDF generation;
-- storage repositories;
-- native share/filesystem;
-- Pro/IAP;
-- combined PDF;
-- custom catalogs;
-- backend/auth/analytics/ads.
+- final Stage/Truss/LED calculation engines;
+- production PDF;
+- production GLB import UI;
+- old FEG code;
+- backend;
+- accounts;
+- ads;
+- analytics;
+- tracking;
+- old standalone app shell.
 
-## Strict prohibitions
+## Critical rule
 
-Do not:
+Guided builders create scene objects. They are not independent calculator applications.
 
-- copy old FEG `index.html`;
-- copy old runtime CSS cascade;
-- use `window.FEGModules`;
-- add visible FEG brand;
-- add Supabase/backend;
-- add ad/tracking/analytics SDK;
-- add external CDN assets;
-- add TestFixtures to runtime;
-- put calculation formulas in React components.
-
-## Required checks
-
-Add scripts so these can run:
-
-```text
-npm run build
-npm run test
-npm run typecheck
-```
-
-If a command cannot be fully meaningful yet, add placeholder tests that pass and document next steps.
-
-## Acceptance
-
-Task 001 is done only when:
-
-- app opens;
-- routes exist;
-- PACK.IT brand visible;
-- no FEG visible brand;
-- RU/EN dictionaries exist;
-- no calculation logic implemented;
-- build/typecheck/test pass;
-- docs are not contradicted.
+Task 001 must make this architecture hard to accidentally reverse.
