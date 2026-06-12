@@ -24,9 +24,11 @@ PACK.IT is documented as a single standalone/offline mobile-first 3D constructor
 9. `docs/02_architecture/OBJECT_SYSTEM.md`
 10. `docs/02_architecture/CAPABILITY_SYSTEM.md`
 11. `docs/02_architecture/ASSET_LIBRARY.md`
-12. `docs/domain/DOMAIN_RULES_REGISTRY.md`
-13. `docs/engineering/PRE_CODE_GATE.md`
-14. `docs/08_tasks/TASK_001_SCENE_SHELL.md`
+12. `docs/engineering/DEVELOPMENT_PREVIEW_STRATEGY.md`
+13. `docs/testing/ACCEPTANCE_TESTS.md`
+14. `docs/domain/DOMAIN_RULES_REGISTRY.md`
+15. `docs/engineering/PRE_CODE_GATE.md`
+16. `docs/08_tasks/TASK_001_SCENE_SHELL.md`
 
 ## Product
 
@@ -120,6 +122,7 @@ PACK.IT is documented as a single standalone/offline mobile-first 3D constructor
 ## UI
 
 - `docs/04_MOBILE_UI_CONTRACT.md`
+- `docs/04_ui/MOBILE_FIRST_RULES.md`
 - `docs/04_ui/ACCESSIBILITY.md`
 - `docs/04_ui/ONBOARDING_HELP.md`
 
@@ -143,11 +146,18 @@ PACK.IT is documented as a single standalone/offline mobile-first 3D constructor
 
 ## Engineering
 
+- `docs/engineering/DEVELOPMENT_LIFECYCLE.md`
+- `docs/engineering/DEVELOPMENT_PREVIEW_STRATEGY.md`
+- `docs/engineering/DEVICE_VALIDATION_MATRIX.md`
 - `docs/engineering/TEST_STRATEGY.md`
 - `docs/engineering/CI_QUALITY_GATES.md`
 - `docs/engineering/DEPENDENCY_POLICY.md`
 - `docs/engineering/UNITS_TEST_CASES.md`
 - `docs/engineering/PRE_CODE_GATE.md`
+
+## Testing
+
+- `docs/testing/ACCEPTANCE_TESTS.md`
 
 ## Legal
 
