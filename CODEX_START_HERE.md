@@ -9,15 +9,19 @@ Do not start coding by copying the old FEG standalone app.
 Read in this order:
 
 1. `README.md`
-2. `docs/INDEX.md`
+2. `docs/PACKIT_MASTER_SPEC.md`
 3. `docs/DECISIONS.md`
-4. `docs/OPEN_QUESTIONS.md`
-5. `docs/engineering/04_PRE_CODE_GATE.md`
-6. `docs/06_CODEX_TASKS.md`
-7. `docs/02_ARCHITECTURE_CONTRACT.md`
-8. `docs/design/00_VISUAL_DIRECTION.md`
-9. `docs/product/00_PRODUCT_SCOPE_V1.md`
-10. `docs/engineering/00_IMPLEMENTATION_GUARDRAILS.md`
+4. `docs/DOCUMENTATION_RULES.md`
+5. `docs/INDEX.md`
+6. `docs/codex/TASK_001_FINAL_HANDOFF.md`
+7. `docs/codex/TASK_001_FOUNDATION_PROMPT.md`
+8. `docs/admin/00_STANDALONE_ADMINISTRATION_MODEL.md`
+9. `docs/product/17_FEATURE_MATRIX.md`
+10. `docs/engineering/04_PRE_CODE_GATE.md`
+11. `docs/engineering/00_IMPLEMENTATION_GUARDRAILS.md`
+12. `docs/design/09_MOBILE_REFERENCE_SCREENS.md`
+
+Open focused docs only as needed after that.
 
 ## 2. Product summary
 
@@ -35,16 +39,18 @@ Calculators:
 
 v1.0 direction:
 
-- offline-first;
+- standalone/offline;
 - no account;
 - no backend;
+- no cloud sync;
+- no remote config;
 - no ads;
 - no analytics;
 - no tracking;
 - local saved calculations;
 - PDF/share;
 - RU/EN foundation;
-- future Pro/entitlements ready.
+- future local Pro/entitlements only if validated.
 
 ## 3. Critical rules
 
@@ -54,7 +60,8 @@ Never do this:
 - do not copy old runtime CSS patch cascade;
 - do not use `window.FEGModules`;
 - do not add visible FEG brand;
-- do not add Supabase/backend/auth;
+- do not add Supabase/Firebase/backend/auth;
+- do not add cloud sync or remote config;
 - do not add ad/tracking/analytics SDK;
 - do not add calculation formulas inside React components;
 - do not generate PDF from uncontrolled full-screen UI screenshot;
@@ -98,7 +105,7 @@ Do:
 - create app shell;
 - create PACK.IT brand layer;
 - create design tokens;
-- create empty Home / Stage / Truss / LED / Saved / Settings / Help / About screens;
+- create empty Home / Stage / Truss / LED / Saved / Settings / PDF Preview screens;
 - create i18n foundation RU/EN;
 - create placeholder core contracts only;
 - create build/check/test scripts.
@@ -107,7 +114,7 @@ Do not:
 
 - implement calculations;
 - implement PDF;
-- implement storage;
+- implement storage schema/migrations;
 - port old FEG code;
 - add native plugins beyond base Capacitor config;
 - add backend/auth/analytics/ads.
@@ -117,11 +124,11 @@ Do not:
 Priority order:
 
 1. `docs/DECISIONS.md`
-2. `docs/engineering/04_PRE_CODE_GATE.md`
-3. `docs/02_ARCHITECTURE_CONTRACT.md`
-4. `docs/product/*`
-5. `docs/calculators/*`
-6. `docs/design/*`
+2. `docs/PACKIT_MASTER_SPEC.md`
+3. `docs/admin/00_STANDALONE_ADMINISTRATION_MODEL.md`
+4. `docs/product/17_FEATURE_MATRIX.md`
+5. `docs/engineering/04_PRE_CODE_GATE.md`
+6. focused docs in their domain
 7. other docs
 
 If still unclear, do not invent behavior. Add to `docs/OPEN_QUESTIONS.md` or ask for decision.
@@ -135,4 +142,5 @@ A task is not done unless:
 - no FEG visible brand;
 - no forbidden SDKs;
 - no old architecture patterns;
+- no backend/cloud dependency;
 - docs updated if behavior changes.
