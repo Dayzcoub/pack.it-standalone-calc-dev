@@ -41,6 +41,14 @@ PACK.IT is documented as a single standalone/offline mobile-first 3D constructor
 - `docs/02_architecture/ASSET_LIBRARY.md`
 - `docs/02_architecture/OFFLINE_FIRST.md`
 
+## Venue and technical planning
+
+- `docs/02_architecture/VENUE_MODEL.md`
+- `docs/02_architecture/ATTACHMENT_POINTS.md`
+- `docs/02_architecture/COLLISION_CLEARANCE.md`
+- `docs/02_architecture/POWER_MODEL.md`
+- `docs/02_architecture/RIGGING_MODEL.md`
+
 ## Scene systems
 
 - `docs/02_architecture/UNDO_REDO.md`
@@ -52,10 +60,15 @@ PACK.IT is documented as a single standalone/offline mobile-first 3D constructor
 - `docs/02_architecture/OBJECT_LIBRARY.md`
 - `docs/02_architecture/MULTI_SCENE.md`
 - `docs/02_architecture/PERFORMANCE_BUDGET.md`
+- `docs/02_architecture/PROJECT_FILE_FORMAT.md`
+- `docs/02_architecture/VALIDATION_LEVELS.md`
+- `docs/02_architecture/USER_MODES.md`
+- `docs/02_architecture/UNITS_LOCALE.md`
 
 ## Rendering
 
 - `docs/03_rendering/THREEJS_RENDERER.md`
+- `docs/03_rendering/CAMERA_PRESETS.md`
 
 ## Guided builders
 
