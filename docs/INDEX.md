@@ -23,8 +23,9 @@ PACK.IT is documented as a single standalone/offline mobile-first 3D constructor
 8. `docs/02_architecture/SCENE_GRAPH.md`
 9. `docs/02_architecture/OBJECT_SYSTEM.md`
 10. `docs/02_architecture/ASSET_LIBRARY.md`
-11. `docs/engineering/PRE_CODE_GATE.md`
-12. `docs/08_tasks/TASK_001_SCENE_SHELL.md`
+11. `docs/domain/DOMAIN_RULES_REGISTRY.md`
+12. `docs/engineering/PRE_CODE_GATE.md`
+13. `docs/08_tasks/TASK_001_SCENE_SHELL.md`
 
 ## Product
 
@@ -33,6 +34,13 @@ PACK.IT is documented as a single standalone/offline mobile-first 3D constructor
 - `docs/01_product/PACKIT_ROADMAP.md`
 - `docs/product/STORE_READINESS.md`
 - `docs/product/DEMO_PROJECTS.md`
+- `docs/product/BACKUP_EXPORT_POLICY.md`
+
+## Architecture decisions
+
+- `docs/adr/ADR_0001_PROJECT_SCENE_FIRST.md`
+- `docs/adr/ADR_0002_THREEJS_RENDERER.md`
+- `docs/adr/ADR_0003_GLB_ASSET_FORMAT.md`
 
 ## Architecture core
 
@@ -52,6 +60,15 @@ PACK.IT is documented as a single standalone/offline mobile-first 3D constructor
 - `docs/02_architecture/ERROR_HANDLING_DIAGNOSTICS.md`
 - `docs/02_architecture/IMPORT_EXPORT_SAFETY.md`
 - `docs/02_architecture/PLUGIN_BOUNDARY.md`
+- `docs/02_architecture/PROJECT_DIFF_COMPARE.md`
+- `docs/02_architecture/PROJECT_NOTES_ANNOTATIONS.md`
+- `docs/02_architecture/FILE_BASED_COLLABORATION.md`
+
+## Domain rules
+
+- `docs/domain/DOMAIN_RULES_REGISTRY.md`
+- `docs/domain/CALCULATION_ENGINE_VERSIONING.md`
+- `docs/domain/CATALOG_SOURCE_POLICY.md`
 
 ## Venue and technical planning
 
@@ -109,12 +126,14 @@ PACK.IT is documented as a single standalone/offline mobile-first 3D constructor
 
 - `docs/07_documents/PDF_ENGINE.md`
 - `docs/07_documents/PDF_TEMPLATE_VERSIONING.md`
+- `docs/07_documents/OUTPUT_MODES.md`
 
 ## Engineering
 
 - `docs/engineering/TEST_STRATEGY.md`
 - `docs/engineering/CI_QUALITY_GATES.md`
 - `docs/engineering/DEPENDENCY_POLICY.md`
+- `docs/engineering/UNITS_TEST_CASES.md`
 - `docs/engineering/PRE_CODE_GATE.md`
 
 ## Legal
