@@ -38,11 +38,18 @@ It must not be a bundle of three separate calculators.
 - ProjectModel contracts
 - SceneModel contracts
 - CatalogModel contracts
+- ManufacturerProfile references
+- MaterialSystem references
+- CapabilitySystem metadata
 - VenueModel placeholder contracts
 - SceneGraph contracts
 - SceneObject contracts
 - SceneGroup contracts
 - AttachmentPoint contracts
+- SpatialQuery-friendly transforms and layers
+- SelectionModel state
+- TransformRules capability flags
+- MeasurementAccuracy separation of stored and formatted values
 - LayerSystem contracts
 - Undo Redo state contracts
 - ValidationIssue shared contract
@@ -63,6 +70,11 @@ It must not be a bundle of three separate calculators.
 - Backup and Export policy compatibility
 - Import and Export safety placeholders
 - PluginBoundary compatibility
+- AI boundary through ActionSystem
+- TelemetryBoundary: no telemetry in Alpha
+- FeatureFlags local structure
+- AssetLicenseRegistry placeholder
+- ProjectHealthScore compatibility
 - Templates compatibility
 - ObjectLibrary compatibility
 - DemoProject fixture compatibility
@@ -105,6 +117,9 @@ It must not be a bundle of three separate calculators.
 - store listing assets
 - real demo catalog content
 - project diff UI
+- final ProjectHealthScore UI
+- AI assistant implementation
+- telemetry implementation
 - backend
 - accounts
 - analytics
@@ -124,12 +139,14 @@ Saved data must be versioned and serializable.
 
 Domain rules and calculation outputs must carry version metadata.
 
+AI and future automation must use ActionSystem and must not mutate renderer state directly.
+
 ## Done when
 
 A developer can open the app shell, see a placeholder project scene, and see entry points for Add Stage, Add Truss, Add LED and Asset Library.
 
 The codebase has typed contracts that make the Project Scene First direction explicit.
 
-The architecture leaves extension points for catalog, venue, scene graph, attachment points, actions, autosave, validation, constraints, collision checks, snapping, layers, measurements, power, rigging, camera presets, units/locale, domain rules, calculation engine versions, output modes, project notes, templates, object library, project file export, file-based collaboration, plugin modules, diagnostics, performance budget and future multi-scene projects.
+The architecture leaves extension points for catalog, venue, scene graph, capabilities, attachment points, spatial queries, selection, transform rules, actions, autosave, validation, constraints, collision checks, snapping, layers, measurements, power, rigging, camera presets, units/locale, domain rules, calculation engine versions, output modes, project notes, templates, object library, project file export, file-based collaboration, plugin modules, diagnostics, feature flags, AI boundary, telemetry boundary, asset license governance, health score, performance budget and future multi-scene projects.
 
 Task 001 must follow `docs/engineering/PRE_CODE_GATE.md`.
