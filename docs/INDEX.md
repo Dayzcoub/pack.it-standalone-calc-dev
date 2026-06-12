@@ -19,9 +19,11 @@ PACK.IT is documented as a single standalone/offline mobile-first 3D constructor
 4. `docs/DECISIONS.md`
 5. `docs/02_architecture/PROJECT_MODEL.md`
 6. `docs/02_architecture/SCENE_MODEL.md`
-7. `docs/02_architecture/OBJECT_SYSTEM.md`
-8. `docs/02_architecture/ASSET_LIBRARY.md`
-9. `docs/08_tasks/TASK_001_SCENE_SHELL.md`
+7. `docs/02_architecture/CATALOG_MODEL.md`
+8. `docs/02_architecture/SCENE_GRAPH.md`
+9. `docs/02_architecture/OBJECT_SYSTEM.md`
+10. `docs/02_architecture/ASSET_LIBRARY.md`
+11. `docs/08_tasks/TASK_001_SCENE_SHELL.md`
 
 ## Product
 
@@ -29,13 +31,27 @@ PACK.IT is documented as a single standalone/offline mobile-first 3D constructor
 - `docs/01_product/PACKIT_RELEASE_STRATEGY.md`
 - `docs/01_product/PACKIT_ROADMAP.md`
 
-## Architecture
+## Architecture core
 
 - `docs/02_architecture/PROJECT_MODEL.md`
 - `docs/02_architecture/SCENE_MODEL.md`
+- `docs/02_architecture/CATALOG_MODEL.md`
+- `docs/02_architecture/SCENE_GRAPH.md`
 - `docs/02_architecture/OBJECT_SYSTEM.md`
 - `docs/02_architecture/ASSET_LIBRARY.md`
 - `docs/02_architecture/OFFLINE_FIRST.md`
+
+## Scene systems
+
+- `docs/02_architecture/UNDO_REDO.md`
+- `docs/02_architecture/CONSTRAINT_ENGINE.md`
+- `docs/02_architecture/SNAP_SYSTEM.md`
+- `docs/02_architecture/LAYER_SYSTEM.md`
+- `docs/02_architecture/MEASUREMENTS.md`
+- `docs/02_architecture/TEMPLATES.md`
+- `docs/02_architecture/OBJECT_LIBRARY.md`
+- `docs/02_architecture/MULTI_SCENE.md`
+- `docs/02_architecture/PERFORMANCE_BUDGET.md`
 
 ## Rendering
 
