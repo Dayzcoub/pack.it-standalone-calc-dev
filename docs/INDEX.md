@@ -22,10 +22,11 @@ PACK.IT is documented as a single standalone/offline mobile-first 3D constructor
 7. `docs/02_architecture/CATALOG_MODEL.md`
 8. `docs/02_architecture/SCENE_GRAPH.md`
 9. `docs/02_architecture/OBJECT_SYSTEM.md`
-10. `docs/02_architecture/ASSET_LIBRARY.md`
-11. `docs/domain/DOMAIN_RULES_REGISTRY.md`
-12. `docs/engineering/PRE_CODE_GATE.md`
-13. `docs/08_tasks/TASK_001_SCENE_SHELL.md`
+10. `docs/02_architecture/CAPABILITY_SYSTEM.md`
+11. `docs/02_architecture/ASSET_LIBRARY.md`
+12. `docs/domain/DOMAIN_RULES_REGISTRY.md`
+13. `docs/engineering/PRE_CODE_GATE.md`
+14. `docs/08_tasks/TASK_001_SCENE_SHELL.md`
 
 ## Product
 
@@ -49,6 +50,7 @@ PACK.IT is documented as a single standalone/offline mobile-first 3D constructor
 - `docs/02_architecture/CATALOG_MODEL.md`
 - `docs/02_architecture/SCENE_GRAPH.md`
 - `docs/02_architecture/OBJECT_SYSTEM.md`
+- `docs/02_architecture/CAPABILITY_SYSTEM.md`
 - `docs/02_architecture/ASSET_LIBRARY.md`
 - `docs/02_architecture/OFFLINE_FIRST.md`
 - `docs/02_architecture/SECURITY_PRIVACY.md`
@@ -63,12 +65,22 @@ PACK.IT is documented as a single standalone/offline mobile-first 3D constructor
 - `docs/02_architecture/PROJECT_DIFF_COMPARE.md`
 - `docs/02_architecture/PROJECT_NOTES_ANNOTATIONS.md`
 - `docs/02_architecture/FILE_BASED_COLLABORATION.md`
+- `docs/02_architecture/SPATIAL_QUERY_SYSTEM.md`
+- `docs/02_architecture/SELECTION_MODEL.md`
+- `docs/02_architecture/TRANSFORM_RULES.md`
+- `docs/02_architecture/MEASUREMENT_ACCURACY_POLICY.md`
+- `docs/02_architecture/PROJECT_HEALTH_SCORE.md`
+- `docs/02_architecture/FEATURE_FLAGS.md`
+- `docs/02_architecture/TELEMETRY_BOUNDARY.md`
+- `docs/02_architecture/AI_BOUNDARY.md`
 
 ## Domain rules
 
 - `docs/domain/DOMAIN_RULES_REGISTRY.md`
 - `docs/domain/CALCULATION_ENGINE_VERSIONING.md`
 - `docs/domain/CATALOG_SOURCE_POLICY.md`
+- `docs/domain/MANUFACTURER_PROFILE_SYSTEM.md`
+- `docs/domain/MATERIAL_SYSTEM.md`
 
 ## Venue and technical planning
 
@@ -121,6 +133,7 @@ PACK.IT is documented as a single standalone/offline mobile-first 3D constructor
 - `docs/06_assets/GLB_PIPELINE.md`
 - `docs/06_assets/MODEL_IMPORT.md`
 - `docs/06_assets/ASSET_OPTIMIZATION.md`
+- `docs/06_assets/ASSET_LICENSE_REGISTRY.md`
 
 ## Documents / export
 
