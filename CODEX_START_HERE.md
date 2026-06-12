@@ -1,146 +1,57 @@
 # CODEX START HERE
 
-This repository is currently a documentation-first pre-code repository for **PACK.IT Calculators / ПАК.ИТ Калькуляторы**.
+This repository is a documentation-first pre-code repository for **PACK.IT / ПАК.ИТ**.
 
-Do not start coding by copying the old FEG standalone app.
+## Current product status
 
-## 1. Read first
+```text
+PACK.IT Alpha 0.1.0
+Architecture Freeze #1
+Project Scene First
+```
+
+The product is not released yet. All `0.x` versions are Alpha/Beta. The first public release is `1.0.0`.
+
+Old internal archive numbers are historical checkpoints only. They are not product versions.
+
+## Non-negotiable direction
+
+Do not build three separate Stage / Truss / LED calculators.
+
+PACK.IT is now a single standalone/offline mobile-first 3D project scene constructor.
+
+The source of truth is:
+
+```text
+ProjectModel → SceneModel → SceneObjects / Groups
+```
+
+BOM, weight, price, power, PDF and export must be generated from `ProjectModel` / `SceneModel`, not from independent calculator result forms.
+
+## Read first
 
 Read in this order:
 
 1. `README.md`
 2. `docs/PACKIT_MASTER_SPEC.md`
 3. `docs/DECISIONS.md`
-4. `docs/DOCUMENTATION_RULES.md`
-5. `docs/INDEX.md`
-6. `docs/codex/TASK_001_FINAL_HANDOFF.md`
-7. `docs/codex/TASK_001_FOUNDATION_PROMPT.md`
-8. `docs/admin/00_STANDALONE_ADMINISTRATION_MODEL.md`
-9. `docs/product/17_FEATURE_MATRIX.md`
-10. `docs/engineering/04_PRE_CODE_GATE.md`
-11. `docs/engineering/00_IMPLEMENTATION_GUARDRAILS.md`
-12. `docs/design/09_MOBILE_REFERENCE_SCREENS.md`
+4. `docs/INDEX.md`
+5. `docs/02_architecture/PROJECT_MODEL.md`
+6. `docs/02_architecture/SCENE_MODEL.md`
+7. `docs/02_architecture/OBJECT_SYSTEM.md`
+8. `docs/02_architecture/ASSET_LIBRARY.md`
+9. `docs/08_tasks/TASK_001_SCENE_SHELL.md`
+10. `docs/codex/TASK_001_FINAL_HANDOFF.md`
+11. `docs/codex/TASK_001_FOUNDATION_PROMPT.md`
 
-Open focused docs only as needed after that.
+Older calculator-first documents may contain useful domain rules, but if they conflict with Project Scene First, this file and `PACKIT_MASTER_SPEC.md` win.
 
-## 2. Product summary
+## First implementation task
 
-Build a new mobile-first app:
-
-```text
-PACK.IT Calculators / ПАК.ИТ Калькуляторы
-```
-
-Calculators:
-
-- Stage;
-- Truss;
-- LED.
-
-v1.0 direction:
-
-- standalone/offline;
-- no account;
-- no backend;
-- no cloud sync;
-- no remote config;
-- no ads;
-- no analytics;
-- no tracking;
-- local saved calculations;
-- PDF/share;
-- RU/EN foundation;
-- future local Pro/entitlements only if validated.
-
-## 3. Critical rules
-
-Never do this:
-
-- do not copy old `index.html` as foundation;
-- do not copy old runtime CSS patch cascade;
-- do not use `window.FEGModules`;
-- do not add visible FEG brand;
-- do not add Supabase/Firebase/backend/auth;
-- do not add cloud sync or remote config;
-- do not add ad/tracking/analytics SDK;
-- do not add calculation formulas inside React components;
-- do not generate PDF from uncontrolled full-screen UI screenshot;
-- do not include test fixtures in production;
-- do not silently recalculate old saved snapshots.
-
-## 4. Architecture target
-
-Use:
+The first allowed code task is:
 
 ```text
-React + TypeScript + Vite + Capacitor
+Task 001 — Project Scene Shell MVP
 ```
 
-Main layers:
-
-```text
-src/core       pure calculation logic
-src/features   screens/features
-src/ui         shared UI kit
-src/renderer   SVG/canvas renderers from DrawingModel
-src/pdf        PdfModel and generation
-src/storage    local storage repositories
-src/native     Capacitor wrappers
-src/i18n       RU/EN dictionaries
-src/brand      PACK.IT brand source
-```
-
-## 5. First allowed task
-
-Only first allowed code task:
-
-```text
-Task 001 — Foundation
-```
-
-Do:
-
-- initialize clean React + TypeScript + Vite + Capacitor project;
-- create routes;
-- create app shell;
-- create PACK.IT brand layer;
-- create design tokens;
-- create empty Home / Stage / Truss / LED / Saved / Settings / PDF Preview screens;
-- create i18n foundation RU/EN;
-- create placeholder core contracts only;
-- create build/check/test scripts.
-
-Do not:
-
-- implement calculations;
-- implement PDF;
-- implement storage schema/migrations;
-- port old FEG code;
-- add native plugins beyond base Capacitor config;
-- add backend/auth/analytics/ads.
-
-## 6. If documents conflict
-
-Priority order:
-
-1. `docs/DECISIONS.md`
-2. `docs/PACKIT_MASTER_SPEC.md`
-3. `docs/admin/00_STANDALONE_ADMINISTRATION_MODEL.md`
-4. `docs/product/17_FEATURE_MATRIX.md`
-5. `docs/engineering/04_PRE_CODE_GATE.md`
-6. focused docs in their domain
-7. other docs
-
-If still unclear, do not invent behavior. Add to `docs/OPEN_QUESTIONS.md` or ask for decision.
-
-## 7. Definition of done
-
-A task is not done unless:
-
-- TypeScript/build pass;
-- tests/checks pass;
-- no FEG visible brand;
-- no forbidden SDKs;
-- no old architecture patterns;
-- no backend/cloud dependency;
-- docs updated if behavior changes.
+It must create only the foundation for the new architecture. It must not copy the old FEG standalone app and must not implement production Stage/Truss/LED calculators as separate apps.
