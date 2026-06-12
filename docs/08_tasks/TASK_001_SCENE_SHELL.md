@@ -53,7 +53,14 @@ It must not be a bundle of three separate calculators.
 - PowerModel placeholder contracts
 - RiggingModel placeholder contracts
 - CameraPreset contracts
+- Domain Rules Registry placeholder
+- CalculationEngineVersion metadata
+- Catalog source status contracts
+- Project notes and annotations placeholder
+- Client and Tech output mode metadata
 - Project file serialization compatibility
+- File-based collaboration compatibility
+- Backup and Export policy compatibility
 - Import and Export safety placeholders
 - PluginBoundary compatibility
 - Templates compatibility
@@ -73,7 +80,9 @@ It must not be a bundle of three separate calculators.
 - PDF template version metadata
 - dependency policy compliance
 - basic checks and tests
+- Units test direction
 - minimal CI quality gate commands
+- ADR awareness
 
 ## Out of scope
 
@@ -95,6 +104,7 @@ It must not be a bundle of three separate calculators.
 - multi-scene UI
 - store listing assets
 - real demo catalog content
+- project diff UI
 - backend
 - accounts
 - analytics
@@ -112,12 +122,14 @@ Scene changes should go through the ActionSystem boundary.
 
 Saved data must be versioned and serializable.
 
+Domain rules and calculation outputs must carry version metadata.
+
 ## Done when
 
 A developer can open the app shell, see a placeholder project scene, and see entry points for Add Stage, Add Truss, Add LED and Asset Library.
 
 The codebase has typed contracts that make the Project Scene First direction explicit.
 
-The architecture leaves extension points for catalog, venue, scene graph, attachment points, actions, autosave, validation, constraints, collision checks, snapping, layers, measurements, power, rigging, camera presets, units/locale, templates, object library, project file export, plugin modules, diagnostics, performance budget and future multi-scene projects.
+The architecture leaves extension points for catalog, venue, scene graph, attachment points, actions, autosave, validation, constraints, collision checks, snapping, layers, measurements, power, rigging, camera presets, units/locale, domain rules, calculation engine versions, output modes, project notes, templates, object library, project file export, file-based collaboration, plugin modules, diagnostics, performance budget and future multi-scene projects.
 
 Task 001 must follow `docs/engineering/PRE_CODE_GATE.md`.
