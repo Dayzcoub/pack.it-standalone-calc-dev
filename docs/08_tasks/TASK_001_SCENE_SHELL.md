@@ -27,17 +27,26 @@ It must not be a bundle of three separate calculators.
 - PACK.IT brand layer
 - design tokens
 - RU/EN i18n foundation
+- Units/Locale settings contracts
 - ProjectModel contracts
 - SceneModel contracts
 - CatalogModel contracts
+- VenueModel placeholder contracts
 - SceneGraph contracts
 - SceneObject contracts
 - SceneGroup contracts
+- AttachmentPoint contracts
 - LayerSystem contracts
 - Undo/Redo state contracts
+- ValidationIssue shared contract
 - ConstraintEngine placeholder contracts
+- Collision/Clearance placeholder contracts
 - SnapSystem settings contracts
 - Measurements placeholder contracts
+- PowerModel placeholder contracts
+- RiggingModel placeholder contracts
+- CameraPreset contracts
+- Project file serialization compatibility
 - Templates compatibility
 - ObjectLibrary compatibility
 - MultiScene compatibility
@@ -57,10 +66,15 @@ It must not be a bundle of three separate calculators.
 - final LED formulas
 - production PDF
 - production GLB import UI
+- full Venue editor
+- final Attachment editor
 - final Undo/Redo engine
 - final Constraint rules
+- final Collision engine
 - final Snap implementation
 - final measurement tools
+- final Power planning UI
+- final Rigging planning UI
 - full object templates
 - multi-scene UI
 - backend
@@ -82,4 +96,4 @@ A developer can open the app shell, see a placeholder project scene, and see ent
 
 The codebase has typed contracts that make the Project Scene First direction explicit.
 
-The architecture leaves clear extension points for CatalogModel, SceneGraph, Undo/Redo, constraints, snapping, layers, measurements, templates, object library, performance budget and future multi-scene projects.
+The architecture leaves clear extension points for CatalogModel, VenueModel, SceneGraph, AttachmentPoints, Undo/Redo, validation, constraints, collision checks, snapping, layers, measurements, power, rigging, camera presets, units/locale, templates, object library, project file export, performance budget and future multi-scene projects.
