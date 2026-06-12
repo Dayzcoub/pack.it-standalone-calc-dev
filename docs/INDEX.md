@@ -4,7 +4,9 @@
 
 - `README.md`
 - `CODEX_START_HERE.md`
+- `docs/PACKIT_MASTER_SPEC.md`
 - `docs/DECISIONS.md`
+- `docs/DOCUMENTATION_RULES.md`
 - `docs/OPEN_QUESTIONS.md`
 - `docs/KNOWN_ISSUES.md`
 - `docs/PRE_CODE_FINAL_CHECKLIST.md`
