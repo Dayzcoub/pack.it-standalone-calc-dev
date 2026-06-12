@@ -6,11 +6,11 @@ Ready for implementation after explicit command.
 
 ## Product status
 
-```text
-PACK.IT Alpha 0.1.0
-Architecture Freeze #1
-Project Scene First
-```
+PACK.IT Alpha 0.1.0.
+
+Architecture Freeze #1.
+
+Project Scene First.
 
 ## Goal
 
@@ -27,7 +27,14 @@ It must not be a bundle of three separate calculators.
 - PACK.IT brand layer
 - design tokens
 - RU/EN i18n foundation
-- Units/Locale settings contracts
+- Units and Locale settings contracts
+- Security and Privacy baseline
+- SchemaVersion and migration placeholder
+- CoordinateSystem convention
+- stable Object ID and reference conventions
+- ActionSystem boundary
+- Autosave and Recovery storage metadata
+- shared Error and Diagnostics boundary
 - ProjectModel contracts
 - SceneModel contracts
 - CatalogModel contracts
@@ -37,18 +44,21 @@ It must not be a bundle of three separate calculators.
 - SceneGroup contracts
 - AttachmentPoint contracts
 - LayerSystem contracts
-- Undo/Redo state contracts
+- Undo Redo state contracts
 - ValidationIssue shared contract
 - ConstraintEngine placeholder contracts
-- Collision/Clearance placeholder contracts
+- Collision and Clearance placeholder contracts
 - SnapSystem settings contracts
 - Measurements placeholder contracts
 - PowerModel placeholder contracts
 - RiggingModel placeholder contracts
 - CameraPreset contracts
 - Project file serialization compatibility
+- Import and Export safety placeholders
+- PluginBoundary compatibility
 - Templates compatibility
 - ObjectLibrary compatibility
+- DemoProject fixture compatibility
 - MultiScene compatibility
 - PerformanceBudget notes
 - placeholder Three.js renderer shell
@@ -57,7 +67,13 @@ It must not be a bundle of three separate calculators.
 - placeholder Add Truss builder entry
 - placeholder Add LED builder entry
 - offline storage adapter interface
-- basic checks/tests
+- Accessibility baseline
+- Onboarding and empty-state placeholders
+- Legal disclaimer source placeholder
+- PDF template version metadata
+- dependency policy compliance
+- basic checks and tests
+- minimal CI quality gate commands
 
 ## Out of scope
 
@@ -68,7 +84,7 @@ It must not be a bundle of three separate calculators.
 - production GLB import UI
 - full Venue editor
 - final Attachment editor
-- final Undo/Redo engine
+- final Undo Redo engine
 - final Constraint rules
 - final Collision engine
 - final Snap implementation
@@ -77,6 +93,8 @@ It must not be a bundle of three separate calculators.
 - final Rigging planning UI
 - full object templates
 - multi-scene UI
+- store listing assets
+- real demo catalog content
 - backend
 - accounts
 - analytics
@@ -90,10 +108,16 @@ Guided builders create or update scene groups.
 
 Final output comes from ProjectModel, SceneModel and CatalogModel links.
 
+Scene changes should go through the ActionSystem boundary.
+
+Saved data must be versioned and serializable.
+
 ## Done when
 
 A developer can open the app shell, see a placeholder project scene, and see entry points for Add Stage, Add Truss, Add LED and Asset Library.
 
 The codebase has typed contracts that make the Project Scene First direction explicit.
 
-The architecture leaves clear extension points for CatalogModel, VenueModel, SceneGraph, AttachmentPoints, Undo/Redo, validation, constraints, collision checks, snapping, layers, measurements, power, rigging, camera presets, units/locale, templates, object library, project file export, performance budget and future multi-scene projects.
+The architecture leaves extension points for catalog, venue, scene graph, attachment points, actions, autosave, validation, constraints, collision checks, snapping, layers, measurements, power, rigging, camera presets, units/locale, templates, object library, project file export, plugin modules, diagnostics, performance budget and future multi-scene projects.
+
+Task 001 must follow `docs/engineering/PRE_CODE_GATE.md`.
