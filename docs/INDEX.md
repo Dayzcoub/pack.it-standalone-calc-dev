@@ -23,13 +23,16 @@ PACK.IT is documented as a single standalone/offline mobile-first 3D constructor
 8. `docs/02_architecture/SCENE_GRAPH.md`
 9. `docs/02_architecture/OBJECT_SYSTEM.md`
 10. `docs/02_architecture/ASSET_LIBRARY.md`
-11. `docs/08_tasks/TASK_001_SCENE_SHELL.md`
+11. `docs/engineering/PRE_CODE_GATE.md`
+12. `docs/08_tasks/TASK_001_SCENE_SHELL.md`
 
 ## Product
 
 - `docs/01_product/PACKIT_VISION.md`
 - `docs/01_product/PACKIT_RELEASE_STRATEGY.md`
 - `docs/01_product/PACKIT_ROADMAP.md`
+- `docs/product/STORE_READINESS.md`
+- `docs/product/DEMO_PROJECTS.md`
 
 ## Architecture core
 
@@ -40,6 +43,15 @@ PACK.IT is documented as a single standalone/offline mobile-first 3D constructor
 - `docs/02_architecture/OBJECT_SYSTEM.md`
 - `docs/02_architecture/ASSET_LIBRARY.md`
 - `docs/02_architecture/OFFLINE_FIRST.md`
+- `docs/02_architecture/SECURITY_PRIVACY.md`
+- `docs/02_architecture/SCHEMA_VERSIONING.md`
+- `docs/02_architecture/COORDINATE_SYSTEM.md`
+- `docs/02_architecture/OBJECT_REFERENCES.md`
+- `docs/02_architecture/ACTION_SYSTEM.md`
+- `docs/02_architecture/AUTOSAVE_RECOVERY.md`
+- `docs/02_architecture/ERROR_HANDLING_DIAGNOSTICS.md`
+- `docs/02_architecture/IMPORT_EXPORT_SAFETY.md`
+- `docs/02_architecture/PLUGIN_BOUNDARY.md`
 
 ## Venue and technical planning
 
@@ -76,6 +88,12 @@ PACK.IT is documented as a single standalone/offline mobile-first 3D constructor
 - `docs/04_builders/BUILDER_TRUSS.md`
 - `docs/04_builders/BUILDER_LED.md`
 
+## UI
+
+- `docs/04_MOBILE_UI_CONTRACT.md`
+- `docs/04_ui/ACCESSIBILITY.md`
+- `docs/04_ui/ONBOARDING_HELP.md`
+
 ## BOM / pricing
 
 - `docs/05_bom/BOM_ENGINE.md`
@@ -85,10 +103,23 @@ PACK.IT is documented as a single standalone/offline mobile-first 3D constructor
 
 - `docs/06_assets/GLB_PIPELINE.md`
 - `docs/06_assets/MODEL_IMPORT.md`
+- `docs/06_assets/ASSET_OPTIMIZATION.md`
 
 ## Documents / export
 
 - `docs/07_documents/PDF_ENGINE.md`
+- `docs/07_documents/PDF_TEMPLATE_VERSIONING.md`
+
+## Engineering
+
+- `docs/engineering/TEST_STRATEGY.md`
+- `docs/engineering/CI_QUALITY_GATES.md`
+- `docs/engineering/DEPENDENCY_POLICY.md`
+- `docs/engineering/PRE_CODE_GATE.md`
+
+## Legal
+
+- `docs/legal/SAFETY_DISCLAIMERS.md`
 
 ## Tasks
 
