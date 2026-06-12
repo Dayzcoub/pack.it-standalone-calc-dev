@@ -22,24 +22,27 @@
 - локальное сохранение расчётов;
 - настройки цен;
 - PDF/export/share;
-- offline-first;
+- standalone/offline;
 - RU/EN foundation;
 - без рекламы;
-- без аккаунтов, backend, аналитики и трекинга в v1.0.
+- без аккаунтов, backend, cloud sync, remote config, аналитики и трекинга.
 
-## Быстрый старт для Codex
+## Быстрый старт для Codex / разработчика
 
 Перед кодом читать:
 
 1. [`CODEX_START_HERE.md`](CODEX_START_HERE.md)
-2. [`docs/INDEX.md`](docs/INDEX.md)
+2. [`docs/PACKIT_MASTER_SPEC.md`](docs/PACKIT_MASTER_SPEC.md)
 3. [`docs/DECISIONS.md`](docs/DECISIONS.md)
-4. [`docs/OPEN_QUESTIONS.md`](docs/OPEN_QUESTIONS.md)
-5. [`docs/PRE_CODE_FINAL_CHECKLIST.md`](docs/PRE_CODE_FINAL_CHECKLIST.md)
-6. [`docs/codex/TASK_001_FOUNDATION_PROMPT.md`](docs/codex/TASK_001_FOUNDATION_PROMPT.md)
+4. [`docs/DOCUMENTATION_RULES.md`](docs/DOCUMENTATION_RULES.md)
+5. [`docs/INDEX.md`](docs/INDEX.md)
+6. [`docs/codex/TASK_001_FINAL_HANDOFF.md`](docs/codex/TASK_001_FINAL_HANDOFF.md)
+7. [`docs/codex/TASK_001_FOUNDATION_PROMPT.md`](docs/codex/TASK_001_FOUNDATION_PROMPT.md)
 
 ## Основные документы
 
+- [`docs/PACKIT_MASTER_SPEC.md`](docs/PACKIT_MASTER_SPEC.md) — единая каноническая сводка проекта.
+- [`docs/DOCUMENTATION_RULES.md`](docs/DOCUMENTATION_RULES.md) — правила ведения документации.
 - [`docs/00_MASTER_PLAN.md`](docs/00_MASTER_PLAN.md) — общий план rewrite и релизная стратегия.
 - [`docs/01_SOURCE_AUDIT.md`](docs/01_SOURCE_AUDIT.md) — что переносим из `Feg_Calc_Stage`, что не переносим.
 - [`docs/02_ARCHITECTURE_CONTRACT.md`](docs/02_ARCHITECTURE_CONTRACT.md) — новая архитектура, папки, слои, правила зависимостей.
@@ -59,6 +62,7 @@
 Ключевые файлы:
 
 - [`docs/assets/03_PRODUCTION_ASSET_MANIFEST.md`](docs/assets/03_PRODUCTION_ASSET_MANIFEST.md) — production asset manifest.
+- [`docs/assets/04_ASSET_GENERATION_PLAN.md`](docs/assets/04_ASSET_GENERATION_PLAN.md) — поэтапный план генерации ассетов.
 - [`assets/README.md`](assets/README.md) — структура ассетов.
 - [`assets/BINARY_UPLOAD_TODO.md`](assets/BINARY_UPLOAD_TODO.md) — что позже загрузить из raster ZIP.
 - [`assets/design-tokens/packit-asset-colors.css`](assets/design-tokens/packit-asset-colors.css) — спокойная PACK.IT palette.
@@ -73,13 +77,14 @@ Raster PNG/WebP ассеты подготовлены в архиве `packit_pr
 
 - typed;
 - mobile-first;
-- offline-first;
+- standalone/offline;
 - Capacitor-ready;
 - с чистым `core/` без DOM и UI-зависимостей;
 - с отдельными renderer/pdf/storage/native слоями;
 - с RU/EN i18n foundation;
 - без FEG-бренда в пользовательском интерфейсе;
-- без рекламы, трекинга и аналитики в v1.0.
+- без backend/cloud sync/remote config;
+- без рекламы, трекинга и аналитики.
 
 Правильная цепочка:
 
@@ -107,4 +112,4 @@ source audit → core contracts → core tests → stage core → truss core →
 Task 001 — Foundation
 ```
 
-Он создаёт только чистую основу приложения: React + TypeScript + Vite + Capacitor, маршруты, PACK.IT brand layer, i18n, design tokens, пустые экраны и placeholder core contracts. Без расчётов, PDF, storage, backend, ads, analytics и старого FEG-кода.
+Он создаёт только чистую основу приложения: React + TypeScript + Vite + Capacitor, маршруты, PACK.IT brand layer, i18n, design tokens, пустые экраны и placeholder core contracts. Без расчётов, PDF, storage schema, backend, ads, analytics и старого FEG-кода.
