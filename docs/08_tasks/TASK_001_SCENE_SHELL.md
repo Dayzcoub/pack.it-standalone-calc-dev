@@ -29,8 +29,19 @@ It must not be a bundle of three separate calculators.
 - RU/EN i18n foundation
 - ProjectModel contracts
 - SceneModel contracts
+- CatalogModel contracts
+- SceneGraph contracts
 - SceneObject contracts
 - SceneGroup contracts
+- LayerSystem contracts
+- Undo/Redo state contracts
+- ConstraintEngine placeholder contracts
+- SnapSystem settings contracts
+- Measurements placeholder contracts
+- Templates compatibility
+- ObjectLibrary compatibility
+- MultiScene compatibility
+- PerformanceBudget notes
 - placeholder Three.js renderer shell
 - placeholder Asset Library entry
 - placeholder Add Stage builder entry
@@ -46,6 +57,12 @@ It must not be a bundle of three separate calculators.
 - final LED formulas
 - production PDF
 - production GLB import UI
+- final Undo/Redo engine
+- final Constraint rules
+- final Snap implementation
+- final measurement tools
+- full object templates
+- multi-scene UI
 - backend
 - accounts
 - analytics
@@ -57,10 +74,12 @@ It must not be a bundle of three separate calculators.
 
 Guided builders create or update scene groups.
 
-Final output comes from ProjectModel and SceneModel.
+Final output comes from ProjectModel, SceneModel and CatalogModel links.
 
 ## Done when
 
 A developer can open the app shell, see a placeholder project scene, and see entry points for Add Stage, Add Truss, Add LED and Asset Library.
 
 The codebase has typed contracts that make the Project Scene First direction explicit.
+
+The architecture leaves clear extension points for CatalogModel, SceneGraph, Undo/Redo, constraints, snapping, layers, measurements, templates, object library, performance budget and future multi-scene projects.
