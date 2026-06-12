@@ -1,115 +1,209 @@
 # 04. Mobile UI Contract
 
-## 1. Цель UI
-
-Новый интерфейс должен быть не адаптированным desktop-web, а настоящим mobile-first приложением для работы на площадке.
-
-Основной пользовательский сценарий:
+## Status
 
 ```text
-открыть приложение → выбрать калькулятор → быстро ввести параметры → увидеть схему/BOM/стоимость → сохранить/отправить PDF
+PACK.IT Alpha 0.1.0
+Project Scene First
 ```
 
-## 2. Базовая карта экранов
+This document replaces the old calculator-first mobile UI contract.
+
+## 1. UI goal
+
+The interface must be a true mobile-first application for building a technical event package in one shared 3D scene.
+
+It must not feel like adapted desktop web UI.
+
+It must also not feel like three separate calculators placed behind three menu cards.
+
+## 2. Main user flow
+
+```text
+open app → create/open project → work in 3D scene → add objects → inspect/edit objects → generate BOM/price/PDF → save/share/export
+```
+
+## 3. Screen map
+
+Canonical Alpha screen map:
 
 ```text
 /
-/stage
-/truss
-/led
-/saved
+/projects
+/project/:id
+/project/:id/add-stage
+/project/:id/add-truss
+/project/:id/add-led
+/project/:id/asset-library
+/project/:id/summary
+/project/:id/pdf
 /settings
 /help
 /about
 ```
 
-## 3. Главный экран
+The main working screen is `/project/:id`.
 
-Главный экран:
+Stage, Truss and LED are guided builder flows inside a project, not standalone calculator destinations.
 
-```text
-ПАК.ИТ Калькуляторы
-Быстрые расчёты сцены, ферм и LED
+## 4. Home screen
 
-[Сцена]
-[Фермы]
-[LED]
+Home screen should focus on projects, not calculators.
 
-Последние расчёты
-Настройки
-Справка
-```
-
-Три основных карточки должны быть крупными, понятными и удобными для тача.
-
-## 4. Общий экран калькулятора
-
-Каждый калькулятор имеет одинаковый UX-каркас:
+Recommended blocks:
 
 ```text
-Header
-Calculator title
-Current calculation name
-Tabs / sections
-Primary result summary
-Actions
+PACK.IT
+Technical package constructor
+
+[New project]
+[Open project]
+
+Recent projects
+Examples / templates
+Settings
+Help
 ```
 
-Внутренние вкладки:
+## 5. Project Scene screen
+
+The project scene is the main product screen.
+
+Mobile layout:
 
 ```text
-Параметры | Схема | BOM | Цена
+Top app bar
+3D Scene View
+Floating add button / bottom action bar
+Object selection state
+Bottom sheet inspector
+Scene / Summary / Export actions
 ```
 
-Дополнительно:
+Primary actions:
 
-```text
-PDF / Share
-Save
-Duplicate
-Reset
-```
+- Add Stage;
+- Add Truss;
+- Add LED;
+- Asset Library;
+- Summary;
+- PDF / Share;
+- Save.
 
-## 5. Почему вкладки, а не длинное полотно
+## 6. Guided builder UX
 
-На телефоне нельзя показывать сразу все панели desktop-версии.
+Guided builders open as modal flows or bottom-sheet flows above the scene.
 
-Нужно разделить:
+They collect only the parameters needed to create or update a scene group.
 
-- ввод параметров;
-- визуальную схему;
-- комплектацию;
-- стоимость;
-- экспорт.
+After completion, the user returns to the shared project scene.
 
-Так интерфейс будет управляемым и не начнёт разваливаться на маленьких экранах.
+Guided builders:
 
-## 6. Breakpoints
+- Add Stage;
+- Add Truss;
+- Add LED.
 
-Основное правило:
+They must not own final isolated tabs such as calculator-only BOM or calculator-only price.
+
+## 7. Object Inspector
+
+After selecting an object, the user edits it through Object Inspector.
+
+Inspector content depends on object type:
+
+- name;
+- dimensions;
+- position;
+- rotation;
+- builder parameters if generated;
+- catalog link if available;
+- BOM mode;
+- warnings;
+- delete/duplicate actions.
+
+Mobile inspector should be a bottom sheet.
+
+Desktop/tablet may use a side panel later.
+
+## 8. Summary and outputs
+
+BOM, price, weight, power and PDF are project-level outputs.
+
+They belong to the whole ProjectModel, not to separate calculator screens.
+
+Summary screen sections:
+
+- project overview;
+- objects list;
+- BOM;
+- weight;
+- price if enabled;
+- warnings;
+- PDF/export actions.
+
+## 9. Asset Library UX
+
+Asset Library allows manual placement of objects in the scene.
+
+Initial categories:
+
+- Audio;
+- Light;
+- Power;
+- Rigging;
+- Decor;
+- Generic 3D.
+
+Object modes:
+
+- visualOnly;
+- catalogLinked.
+
+The library can start as a simple list/grid with placeholders in Task 001.
+
+## 10. Breakpoints
+
+Keep the breakpoint strategy simple.
+
+Recommended rule:
 
 ```text
 mobile: <= 767px
-desktop/tablet: >= 768px
+tablet/desktop: >= 768px
 ```
 
-Не вводить промежуточный breakpoint zoo без необходимости.
+Do not introduce a breakpoint zoo.
 
-Запрещено возвращать старую цепочку:
+Do not restore old patch chains such as 860 / 900 / 1024 / 1179 / 1180 / 1280.
 
-```text
-860 / 900 / 1024 / 1179 / 1180 / 1280 with patch layers
-```
+## 11. Scene interaction on mobile
 
-Если desktop/tablet версия будет нужна позже, она должна быть отдельным устойчивым layout, а не набором override-костылей.
+The scene must support touch-first interaction:
 
-## 7. Design system
+- orbit/pan/zoom;
+- select object;
+- move object through controlled handles or simplified controls;
+- rotate object through inspector or transform controls;
+- fit view;
+- switch view: perspective, iso, top, front, side.
 
-Все экраны строятся из общих компонентов:
+No hover-only interactions.
+
+All controls must respect safe areas.
+
+## 12. Design system
+
+Use shared components:
 
 - AppShell;
 - ScreenHeader;
-- CalculatorTabs;
+- SceneViewport;
+- BottomActionBar;
+- FloatingActionButton;
+- BottomSheet;
+- ObjectInspector;
+- BuilderSheet;
 - Button;
 - IconButton;
 - Input;
@@ -118,205 +212,38 @@ desktop/tablet: >= 768px
 - SegmentedControl;
 - Card;
 - SummaryCard;
-- BomTable;
-- PriceSummary;
-- BottomActionBar;
-- Sheet;
-- Modal;
-- EmptyState;
-- ErrorState;
-- LoadingState.
+- WarningBanner.
 
-## 8. Touch rules
+Old `CalculatorTabs` is not canonical anymore.
 
-Минимальные размеры:
+Tabs may be used inside sheets if useful, but the primary app structure is scene-first.
 
-```text
-primary button height: 44–52 px
-input height: 44–52 px
-icon button: 44 × 44 px
-card tap zone: >= 56 px
-```
+## 13. Visual direction
 
-Запрещено:
+Visual direction remains valid:
 
-- мелкие кнопки рядом без отступа;
-- таблицы без горизонтального scroll wrapper;
-- поля, где текст обрезается до нечитаемого;
-- hover-only states;
-- действия, доступные только через mouse.
+- professional;
+- calm;
+- technical;
+- dusty gray-blue / graphite direction;
+- readable in dark backstage and bright outdoor conditions;
+- no visible FEG branding.
 
-## 9. Stage UI
+## 14. What remains useful from old UI docs
 
-### Parameters tab
+Keep:
 
-Поля:
+- mobile-first discipline;
+- touch-friendly sizing;
+- safe areas;
+- shared components;
+- no horizontal overflow;
+- no breakpoint chaos;
+- concise field-friendly copy.
 
-- stage system;
-- width;
-- depth;
-- height;
-- deck type;
-- post/rail type if needed;
-- stairs;
-- end closure/skirt;
-- skirt type;
-- module/rental price;
-- mounting;
-- delivery.
+Replace:
 
-### Scheme tab
-
-- SVG/canvas scheme;
-- zoom;
-- fit;
-- center;
-- edit tools if needed.
-
-### BOM tab
-
-- grouped BOM;
-- quantities;
-- units;
-- total weight if available.
-
-### Price tab
-
-- rental/modules;
-- mounting;
-- delivery;
-- total;
-- notes.
-
-## 10. Truss UI
-
-### Parameters tab
-
-- mode: portal / frame / stool / manual;
-- width;
-- height;
-- depth;
-- manual leg count;
-- pricing;
-- load check entry point.
-
-### Scheme tab
-
-- truss drawing;
-- zoom;
-- fit;
-- center;
-- selected part details;
-- add/remove tools if manual mode is enabled.
-
-### BOM tab
-
-- straight trusses;
-- nodes;
-- bases;
-- fasteners;
-- weights.
-
-### Price tab
-
-- rental;
-- mounting;
-- delivery;
-- total;
-- warnings.
-
-## 11. LED UI
-
-### Parameters tab
-
-- cabinet type;
-- construction name;
-- width;
-- height;
-- hanging;
-- standing;
-- leg type;
-- pricing.
-
-### Scheme tab
-
-- cabinet grid;
-- construction selector;
-- active construction indication;
-- zoom;
-- fit;
-- center.
-
-### BOM tab
-
-- cabinets;
-- Hanging Bars;
-- spansets/shackles;
-- legs;
-- cookies/bolts;
-- power cables.
-
-### Price tab
-
-- cabinets/rental;
-- mounting;
-- delivery;
-- total;
-- power/weight summary.
-
-## 12. Tables
-
-Mobile tables must be inside scroll wrappers.
-
-Rows should be readable:
-
-```text
-Name
-Qty / Unit
-Weight / Price if available
-Notes
-```
-
-For mobile, card-list BOM view may be better than full table.
-
-## 13. Bottom action bar
-
-Calculator screens can use sticky bottom bar:
-
-```text
-[Save] [PDF] [Share]
-```
-
-But it must respect safe-area insets on iPhone.
-
-## 14. Themes
-
-Both themes allowed:
-
-- dark default;
-- light optional.
-
-Theme must be token-based.
-
-Запрещено:
-
-- hard-coded theme colors inside features;
-- duplicate dark overrides;
-- theme guard loops;
-- runtime mutation observers for theme correction.
-
-## 15. UI acceptance
-
-UI task is accepted only when:
-
-- no horizontal page overflow on 360/390/430 widths;
-- touch targets are usable;
-- text is readable;
-- tabs do not jump;
-- buttons stay in stable positions;
-- scheme can be zoomed/fitted/centered;
-- BOM is readable;
-- price is clear;
-- no FEG brand visible;
-- no inline styles;
-- no one-off hacks for a single block.
+- calculator cards as the main product model;
+- independent Stage/Truss/LED routes as final screens;
+- calculator-only tabs;
+- calculator-only save/PDF/result model.
