@@ -25,11 +25,12 @@ PACK.IT is documented as a single standalone/offline mobile-first 3D constructor
 10. `docs/02_architecture/CAPABILITY_SYSTEM.md`
 11. `docs/02_architecture/ASSET_LIBRARY.md`
 12. `docs/06_assets/BLENDER_PIPELINE.md`
-13. `docs/engineering/DEVELOPMENT_PREVIEW_STRATEGY.md`
-14. `docs/testing/ACCEPTANCE_TESTS.md`
-15. `docs/domain/DOMAIN_RULES_REGISTRY.md`
-16. `docs/engineering/PRE_CODE_GATE.md`
-17. `docs/08_tasks/TASK_001_SCENE_SHELL.md`
+13. `docs/06_assets/BLENDER_SERVER_PIPELINE.md`
+14. `docs/engineering/DEVELOPMENT_PREVIEW_STRATEGY.md`
+15. `docs/testing/ACCEPTANCE_TESTS.md`
+16. `docs/domain/DOMAIN_RULES_REGISTRY.md`
+17. `docs/engineering/PRE_CODE_GATE.md`
+18. `docs/08_tasks/TASK_001_SCENE_SHELL.md`
 
 ## Product
 
@@ -46,6 +47,7 @@ PACK.IT is documented as a single standalone/offline mobile-first 3D constructor
 - `docs/adr/ADR_0002_THREEJS_RENDERER.md`
 - `docs/adr/ADR_0003_GLB_ASSET_FORMAT.md`
 - `docs/adr/ADR_0004_BLENDER_PIPELINE_NOT_RUNTIME.md`
+- `docs/adr/ADR_0005_OPTIONAL_BLENDER_SERVER.md`
 
 ## Architecture core
 
@@ -136,6 +138,7 @@ PACK.IT is documented as a single standalone/offline mobile-first 3D constructor
 ## Assets
 
 - `docs/06_assets/BLENDER_PIPELINE.md`
+- `docs/06_assets/BLENDER_SERVER_PIPELINE.md`
 - `docs/06_assets/GLB_PIPELINE.md`
 - `docs/06_assets/MODEL_IMPORT.md`
 - `docs/06_assets/ASSET_OPTIMIZATION.md`
