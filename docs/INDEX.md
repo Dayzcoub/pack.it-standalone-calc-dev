@@ -24,13 +24,14 @@ PACK.IT is documented as a single standalone/offline mobile-first 3D constructor
 9. `docs/02_architecture/OBJECT_SYSTEM.md`
 10. `docs/02_architecture/CAPABILITY_SYSTEM.md`
 11. `docs/02_architecture/ASSET_LIBRARY.md`
-12. `docs/06_assets/BLENDER_PIPELINE.md`
-13. `docs/06_assets/BLENDER_SERVER_PIPELINE.md`
-14. `docs/engineering/DEVELOPMENT_PREVIEW_STRATEGY.md`
-15. `docs/testing/ACCEPTANCE_TESTS.md`
-16. `docs/domain/DOMAIN_RULES_REGISTRY.md`
-17. `docs/engineering/PRE_CODE_GATE.md`
-18. `docs/08_tasks/TASK_001_SCENE_SHELL.md`
+12. `docs/02_architecture/CONNECTED_CRM_WAREHOUSE_MODE.md`
+13. `docs/06_assets/BLENDER_PIPELINE.md`
+14. `docs/06_assets/BLENDER_SERVER_PIPELINE.md`
+15. `docs/engineering/DEVELOPMENT_PREVIEW_STRATEGY.md`
+16. `docs/testing/ACCEPTANCE_TESTS.md`
+17. `docs/domain/DOMAIN_RULES_REGISTRY.md`
+18. `docs/engineering/PRE_CODE_GATE.md`
+19. `docs/08_tasks/TASK_001_SCENE_SHELL.md`
 
 ## Product
 
@@ -48,6 +49,7 @@ PACK.IT is documented as a single standalone/offline mobile-first 3D constructor
 - `docs/adr/ADR_0003_GLB_ASSET_FORMAT.md`
 - `docs/adr/ADR_0004_BLENDER_PIPELINE_NOT_RUNTIME.md`
 - `docs/adr/ADR_0005_OPTIONAL_BLENDER_SERVER.md`
+- `docs/adr/ADR_0006_OPTIONAL_CRM_WAREHOUSE_CONNECTION.md`
 
 ## Architecture core
 
@@ -58,6 +60,7 @@ PACK.IT is documented as a single standalone/offline mobile-first 3D constructor
 - `docs/02_architecture/OBJECT_SYSTEM.md`
 - `docs/02_architecture/CAPABILITY_SYSTEM.md`
 - `docs/02_architecture/ASSET_LIBRARY.md`
+- `docs/02_architecture/CONNECTED_CRM_WAREHOUSE_MODE.md`
 - `docs/02_architecture/OFFLINE_FIRST.md`
 - `docs/02_architecture/SECURITY_PRIVACY.md`
 - `docs/02_architecture/SCHEMA_VERSIONING.md`
