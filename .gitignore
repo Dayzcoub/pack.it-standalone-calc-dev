@@ -1,0 +1,11 @@
+node_modules/
+dist/
+*.tsbuildinfo
+_packit_server.*.log
+*.config.js
+*.config.d.ts
+debug.log
+packit-home.png
+asset-library-*.png
+test-results/
+playwright-report/
